@@ -1,0 +1,21 @@
+{
+  "item.vanillasabplus.crimson_boat": "Crimson Boat",
+  "item.vanillasabplus.crimson_chest_boat": "Crimson Chest Boat",
+
+  "item.vanillasabplus.warped_boat": "Warped Boat",
+  "item.vanillasabplus.warped_chest_boat": "Warped Chest Boat",
+
+  "item.vanillasabplus.stone_boat": "Stone Boat",
+  "item.vanillasabplus.stone_chest_boat": "Stone Chest Boat",
+  "block.vanillasabplus.stone_sign": "Stone Sign",
+  "block.vanillasabplus.stone_hanging_sign": "Stone Hanging Sign",
+
+  "item.vanillasabplus.cobblestone_boat": "Cobblestone Boat",
+  "item.vanillasabplus.cobblestone_chest_boat": "Cobblestone Chest Boat",
+
+  "item.vanillasabplus.mossy_cobblestone_boat": "Mossy Cobblestone Boat",
+  "item.vanillasabplus.mossy_cobblestone_chest_boat": "Mossy Cobblestone Chest Boat",
+
+  "itemgroup.vsabp_boat": "Vanilla+ Boats",
+  "itemgroup.vsabp_sign": "Vanilla+ Signs"
+}

@@ -1,11 +1,21 @@
 {
-	"required": true,
-	"package": "net.fellter.vanillasabplus.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "net.fellter.vanillasabplus.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlockEntityTypeMixin",
+    "BoatEntityMixin",
+    "EntityPredicateMixin",
+    "MixinAbstractBlockSettings"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "BoatEntityRendererMixin",
+    "HangingSignBlockEntityRendererMixin",
+    "HangingSignEditScreenMixin",
+    "SignBlockEntityRendererMixin",
+    "SignEditScreenMixin"
+  ]
 }
