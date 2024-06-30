@@ -13,14 +13,33 @@ public class BoatTypes {
 
     public static final Identifier CRIMSON_ID = createBoatIdentifier("crimson");
     public static final RegistryKey<ModBoatType> CRIMSON = registerBoatRegistryKey(CRIMSON_ID);
+    
     public static final Identifier WARPED_ID = createBoatIdentifier("warped");
     public static final RegistryKey<ModBoatType> WARPED = registerBoatRegistryKey(WARPED_ID);
+    
     public static final Identifier STONE_ID = createBoatIdentifier("stone");
     public static final RegistryKey<ModBoatType> STONE = registerBoatRegistryKey(STONE_ID);
+    
     public static final Identifier COBBLESTONE_ID = createBoatIdentifier("cobblestone");
     public static final RegistryKey<ModBoatType> COBBLESTONE = registerBoatRegistryKey(COBBLESTONE_ID);
+    
     public static final Identifier MOSSY_COBBLESTONE_ID = createBoatIdentifier("mossy_cobblestone");
     public static final RegistryKey<ModBoatType> MOSSY_COBBLESTONE = registerBoatRegistryKey(MOSSY_COBBLESTONE_ID);
+    
+    public static final Identifier SMOOTH_STONE_ID = createBoatIdentifier("smooth_stone");
+    public static final RegistryKey<ModBoatType> SMOOTH_STONE = registerBoatRegistryKey(SMOOTH_STONE_ID);
+    
+    public static final Identifier STONE_BRICKS_ID = createBoatIdentifier("stone_bricks");
+    public static final RegistryKey<ModBoatType> STONE_BRICKS = registerBoatRegistryKey(STONE_BRICKS_ID);
+    
+    public static final Identifier CRACKED_STONE_BRICKS_ID = createBoatIdentifier("cracked_stone_bricks");
+    public static final RegistryKey<ModBoatType> CRACKED_STONE_BRICKS = registerBoatRegistryKey(CRACKED_STONE_BRICKS_ID);
+    
+    public static final Identifier MOSSY_STONE_BRICKS_ID = createBoatIdentifier("mossy_stone_bricks");
+    public static final RegistryKey<ModBoatType> MOSSY_STONE_BRICKS = registerBoatRegistryKey(MOSSY_STONE_BRICKS_ID);
+    
+    public static final Identifier GRANITE_ID = createBoatIdentifier("granite");
+    public static final RegistryKey<ModBoatType> GRANITE = registerBoatRegistryKey(GRANITE_ID);
 
 
     public static void registerBoatTypes() {
@@ -29,6 +48,11 @@ public class BoatTypes {
         registerBoatType(STONE_ID, ModItems.STONE_BOAT, ModItems.STONE_CHEST_BOAT, Blocks.STONE.asItem());
         registerBoatType(COBBLESTONE_ID, ModItems.COBBLESTONE_BOAT, ModItems.COBBLESTONE_CHEST_BOAT, Blocks.COBBLESTONE.asItem());
         registerBoatType(MOSSY_COBBLESTONE_ID, ModItems.MOSSY_COBBLESTONE_BOAT, ModItems.MOSSY_COBBLESTONE_CHEST_BOAT, Blocks.MOSSY_COBBLESTONE.asItem());
+        registerBoatType(SMOOTH_STONE_ID, ModItems.SMOOTH_STONE_BOAT, ModItems.SMOOTH_STONE_CHEST_BOAT, Blocks.SMOOTH_STONE.asItem());
+        registerBoatType(STONE_BRICKS_ID, ModItems.STONE_BRICKS_BOAT, ModItems.STONE_BRICKS_CHEST_BOAT, Blocks.STONE_BRICKS.asItem());
+        registerBoatType(CRACKED_STONE_BRICKS_ID, ModItems.CRACKED_STONE_BRICKS_BOAT, ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT, Blocks.CRACKED_STONE_BRICKS.asItem());
+        registerBoatType(MOSSY_STONE_BRICKS_ID, ModItems.MOSSY_STONE_BRICKS_BOAT, ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT, Blocks.MOSSY_STONE_BRICKS.asItem());
+        registerBoatType(GRANITE_ID, ModItems.GRANITE_BOAT, ModItems.GRANITE_CHEST_BOAT, Blocks.GRANITE.asItem());
     }
 
 

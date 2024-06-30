@@ -4,6 +4,11 @@
     "vanillasabplus:warped_boat",
     "vanillasabplus:stone_boat",
     "vanillasabplus:cobblestone_boat",
-    "vanillasabplus:mossy_cobblestone_boat"
+    "vanillasabplus:mossy_cobblestone_boat",
+    "vanillasabplus:smooth_stone_boat",
+    "vanillasabplus:stone_bricks_boat",
+    "vanillasabplus:cracked_stone_bricks_boat",
+    "vanillasabplus:mossy_stone_bricks_boat",
+    "vanillasabplus:granite_boat"
   ]
 }

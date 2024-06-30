@@ -21,7 +21,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.WARPED_BOAT)
                 .add(ModItems.STONE_BOAT)
                 .add(ModItems.COBBLESTONE_BOAT)
-                .add(ModItems.MOSSY_COBBLESTONE_BOAT);
+                .add(ModItems.MOSSY_COBBLESTONE_BOAT)
+                .add(ModItems.SMOOTH_STONE_BOAT)
+                .add(ModItems.STONE_BRICKS_BOAT)
+                .add(ModItems.CRACKED_STONE_BRICKS_BOAT)
+                .add(ModItems.MOSSY_STONE_BRICKS_BOAT)
+                .add(ModItems.GRANITE_BOAT);
 
 
         getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
@@ -29,6 +34,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.WARPED_CHEST_BOAT)
                 .add(ModItems.STONE_CHEST_BOAT)
                 .add(ModItems.COBBLESTONE_CHEST_BOAT)
-                .add(ModItems.MOSSY_COBBLESTONE_CHEST_BOAT);
+                .add(ModItems.MOSSY_COBBLESTONE_CHEST_BOAT)
+                .add(ModItems.SMOOTH_STONE_CHEST_BOAT)
+                .add(ModItems.STONE_BRICKS_CHEST_BOAT)
+                .add(ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT)
+                .add(ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT)
+                .add(ModItems.GRANITE_CHEST_BOAT);
     }
 }

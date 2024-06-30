@@ -6,6 +6,7 @@ import net.fellter.vanillasabplus.util.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -26,11 +27,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.STONE_BOAT, Blocks.STONE);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.STONE_CHEST_BOAT, Blocks.STONE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.HANGING_STONE_SIGN, Blocks.STONE);
+        RecipeProvider.createSignRecipe(ModItems.STONE_SIGN, Ingredient.ofItems(Blocks.STONE));
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.COBBLESTONE_BOAT, Blocks.COBBLESTONE);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.COBBLESTONE_CHEST_BOAT, Blocks.COBBLESTONE);
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.MOSSY_COBBLESTONE_BOAT, Blocks.MOSSY_COBBLESTONE);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.MOSSY_COBBLESTONE_CHEST_BOAT, Blocks.MOSSY_COBBLESTONE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.SMOOTH_STONE_BOAT, Blocks.SMOOTH_STONE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.SMOOTH_STONE_CHEST_BOAT, Blocks.SMOOTH_STONE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.STONE_BRICKS_BOAT, Blocks.STONE_BRICKS);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.STONE_BRICKS_CHEST_BOAT, Blocks.STONE_BRICKS);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_BOAT, Blocks.CRACKED_STONE_BRICKS);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT, Blocks.CRACKED_STONE_BRICKS);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_BOAT, Blocks.MOSSY_STONE_BRICKS);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT, Blocks.MOSSY_STONE_BRICKS);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.GRANITE_BOAT, Blocks.GRANITE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.GRANITE_CHEST_BOAT, Blocks.GRANITE);
     }
 }

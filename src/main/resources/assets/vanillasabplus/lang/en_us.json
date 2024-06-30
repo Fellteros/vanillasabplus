@@ -16,6 +16,21 @@
   "item.vanillasabplus.mossy_cobblestone_boat": "Mossy Cobblestone Boat",
   "item.vanillasabplus.mossy_cobblestone_chest_boat": "Mossy Cobblestone Chest Boat",
 
+  "item.vanillasabplus.smooth_stone_boat": "Smooth Stone Boat",
+  "item.vanillasabplus.smooth_stone_chest_boat": "Smooth Stone Chest Boat",
+
+  "item.vanillasabplus.stone_bricks_boat": "Stone Brick Boat",
+  "item.vanillasabplus.stone_bricks_chest_boat": "Stone Brick Chest Boat",
+
+  "item.vanillasabplus.cracked_stone_bricks_boat": "Cracked Stone Brick Boat",
+  "item.vanillasabplus.cracked_stone_bricks_chest_boat": "Cracked Stone Brick Chest Boat",
+
+  "item.vanillasabplus.mossy_stone_bricks_boat": "Mossy Stone Brick Boat",
+  "item.vanillasabplus.mossy_stone_bricks_chest_boat": "Mossy Stone Brick Chest Boat",
+
+  "item.vanillasabplus.granite_boat": "Granite Boat",
+  "item.vanillasabplus.granite_chest_boat": "Granite Chest Boat",
+
   "itemgroup.vsabp_boat": "Vanilla+ Boats",
   "itemgroup.vsabp_sign": "Vanilla+ Signs"
 }

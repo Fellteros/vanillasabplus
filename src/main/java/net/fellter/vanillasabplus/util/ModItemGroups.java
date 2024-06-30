@@ -30,6 +30,21 @@ public class ModItemGroups {
                         entries.add(ModItems.MOSSY_COBBLESTONE_BOAT);
                         entries.add(ModItems.MOSSY_COBBLESTONE_CHEST_BOAT);
 
+                        entries.add(ModItems.SMOOTH_STONE_BOAT);
+                        entries.add(ModItems.SMOOTH_STONE_CHEST_BOAT);
+
+                        entries.add(ModItems.STONE_BRICKS_BOAT);
+                        entries.add(ModItems.STONE_BRICKS_CHEST_BOAT);
+
+                        entries.add(ModItems.CRACKED_STONE_BRICKS_BOAT);
+                        entries.add(ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT);
+
+                        entries.add(ModItems.MOSSY_STONE_BRICKS_BOAT);
+                        entries.add(ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT);
+
+                        entries.add(ModItems.GRANITE_BOAT);
+                        entries.add(ModItems.GRANITE_CHEST_BOAT);
+
             })).build());
 
     public static final ItemGroup VSABP_SIGN_GROUP = Registry.register(Registries.ITEM_GROUP,

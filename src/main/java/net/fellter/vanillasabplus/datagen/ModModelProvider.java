@@ -37,6 +37,21 @@ public class ModModelProvider extends FabricModelProvider {
         
         itemModelGenerator.register(ModItems.MOSSY_COBBLESTONE_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOSSY_COBBLESTONE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.SMOOTH_STONE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SMOOTH_STONE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.STONE_BRICKS_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STONE_BRICKS_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.CRACKED_STONE_BRICKS_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.MOSSY_STONE_BRICKS_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.GRANITE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GRANITE_CHEST_BOAT, Models.GENERATED);
 
     }
 }

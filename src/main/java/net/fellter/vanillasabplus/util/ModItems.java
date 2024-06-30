@@ -35,6 +35,21 @@ public class ModItems {
     public static final Item MOSSY_COBBLESTONE_BOAT = registerBoatItem("mossy_cobblestone_boat", BoatTypes.MOSSY_COBBLESTONE, false, new Item.Settings().maxCount(1));
     public static final Item MOSSY_COBBLESTONE_CHEST_BOAT = registerBoatItem("mossy_cobblestone_chest_boat", BoatTypes.MOSSY_COBBLESTONE, true, new Item.Settings().maxCount(1));
 
+    public static final Item SMOOTH_STONE_BOAT = registerBoatItem("smooth_stone_boat", BoatTypes.SMOOTH_STONE, false, new Item.Settings().maxCount(1));
+    public static final Item SMOOTH_STONE_CHEST_BOAT = registerBoatItem("smooth_stone_chest_boat", BoatTypes.SMOOTH_STONE, true, new Item.Settings().maxCount(1));
+
+    public static final Item STONE_BRICKS_BOAT = registerBoatItem("stone_bricks_boat", BoatTypes.STONE_BRICKS, false, new Item.Settings().maxCount(1));
+    public static final Item STONE_BRICKS_CHEST_BOAT = registerBoatItem("stone_bricks_chest_boat", BoatTypes.STONE_BRICKS, true, new Item.Settings().maxCount(1));
+
+    public static final Item CRACKED_STONE_BRICKS_BOAT = registerBoatItem("cracked_stone_bricks_boat", BoatTypes.CRACKED_STONE_BRICKS, false, new Item.Settings().maxCount(1));
+    public static final Item CRACKED_STONE_BRICKS_CHEST_BOAT = registerBoatItem("cracked_stone_bricks_chest_boat", BoatTypes.CRACKED_STONE_BRICKS, true, new Item.Settings().maxCount(1));
+
+    public static final Item MOSSY_STONE_BRICKS_BOAT = registerBoatItem("mossy_stone_bricks_boat", BoatTypes.MOSSY_STONE_BRICKS, false, new Item.Settings().maxCount(1));
+    public static final Item MOSSY_STONE_BRICKS_CHEST_BOAT = registerBoatItem("mossy_stone_bricks_chest_boat", BoatTypes.MOSSY_STONE_BRICKS, true, new Item.Settings().maxCount(1));
+
+    public static final Item GRANITE_BOAT = registerBoatItem("granite_boat", BoatTypes.GRANITE, false, new Item.Settings().maxCount(1));
+    public static final Item GRANITE_CHEST_BOAT = registerBoatItem("granite_chest_boat", BoatTypes.GRANITE, true, new Item.Settings().maxCount(1));
+
 
 
     private static Item registerItem(String name, Item item) {

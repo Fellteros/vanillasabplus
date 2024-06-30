@@ -4,6 +4,11 @@
     "vanillasabplus:warped_chest_boat",
     "vanillasabplus:stone_chest_boat",
     "vanillasabplus:cobblestone_chest_boat",
-    "vanillasabplus:mossy_cobblestone_chest_boat"
+    "vanillasabplus:mossy_cobblestone_chest_boat",
+    "vanillasabplus:smooth_stone_chest_boat",
+    "vanillasabplus:stone_bricks_chest_boat",
+    "vanillasabplus:cracked_stone_bricks_chest_boat",
+    "vanillasabplus:mossy_stone_bricks_chest_boat",
+    "vanillasabplus:granite_chest_boat"
   ]
 }
