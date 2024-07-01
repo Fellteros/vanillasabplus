@@ -20,5 +20,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WALL_STONE_SIGN);
         addDrop(ModBlocks.HANGING_STONE_SIGN);
         addDrop(ModBlocks.HANGING_WALL_STONE_SIGN);
+
+        addDrop(ModBlocks.COBBLESTONE_SIGN);
+        addDrop(ModBlocks.WALL_COBBLESTONE_SIGN);
+        addDrop(ModBlocks.HANGING_COBBLESTONE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_COBBLESTONE_SIGN);
     }
 }

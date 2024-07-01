@@ -1,4 +1,5 @@
-// 1.21	2024-06-30T08:48:19.1645942	vanillasabplus/Block Loot Tables
-32e5482dd825587e0eb10306c62da846f1dc1ce5 data\vanillasabplus\loot_table\blocks\stone_wall_hanging_sign.json
+// 1.21	2024-07-01T06:57:00.7370841	vanillasabplus/Block Loot Tables
+2701bc5600cebe34d6bcedf4d1e9626dd44a41cc data\vanillasabplus\loot_table\blocks\cobblestone_hanging_sign.json
 32e5482dd825587e0eb10306c62da846f1dc1ce5 data\vanillasabplus\loot_table\blocks\stone_hanging_sign.json
+82005edfa8a0780eb09f40c32f5bc8744b999e29 data\vanillasabplus\loot_table\blocks\cobblestone_sign.json
 205078b56909e827596548411bd35ed4292278c9 data\vanillasabplus\loot_table\blocks\stone_sign.json

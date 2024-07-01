@@ -20,18 +20,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STONE_SIGN)
                 .add(ModBlocks.WALL_STONE_SIGN)
                 .add(ModBlocks.HANGING_STONE_SIGN)
-                .add(ModBlocks.HANGING_WALL_STONE_SIGN);
+                .add(ModBlocks.HANGING_WALL_STONE_SIGN)
+                .add(ModBlocks.COBBLESTONE_SIGN)
+                .add(ModBlocks.WALL_COBBLESTONE_SIGN)
+                .add(ModBlocks.HANGING_COBBLESTONE_SIGN)
+                .add(ModBlocks.HANGING_WALL_COBBLESTONE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.SIGNS)
-                .add(ModBlocks.STONE_SIGN);
+                .add(ModBlocks.STONE_SIGN)
+                .add(ModBlocks.COBBLESTONE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
-                .add(ModBlocks.WALL_STONE_SIGN);
+                .add(ModBlocks.WALL_STONE_SIGN)
+                .add(ModBlocks.WALL_COBBLESTONE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
-                .add(ModBlocks.HANGING_STONE_SIGN);
+                .add(ModBlocks.HANGING_STONE_SIGN)
+                .add(ModBlocks.HANGING_COBBLESTONE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
-                .add(ModBlocks.HANGING_WALL_STONE_SIGN);
+                .add(ModBlocks.HANGING_WALL_STONE_SIGN)
+                .add(ModBlocks.HANGING_WALL_COBBLESTONE_SIGN);
     }
 }

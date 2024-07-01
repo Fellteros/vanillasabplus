@@ -55,6 +55,9 @@ public class ModItemGroups {
                         entries.add(ModItems.STONE_SIGN);
                         entries.add(ModItems.HANGING_STONE_SIGN);
 
+                        entries.add(ModItems.COBBLESTONE_SIGN);
+                        entries.add(ModItems.COBBLESTONE_HANGING_SIGN);
+
             })).build());
 
     public static void registerItemGroups() {

@@ -21,13 +21,20 @@ public class ModBlocks {
 
     public static final Block STONE_MOD = registerBlock("stone_mod",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
-
     public static final Block STONE_SIGN = createSignBlock("stone_sign", "stone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.STONE));
     public static final Block WALL_STONE_SIGN = createWallSignBlock("stone_wall_sign", "stone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.STONE).dropsLike(STONE_SIGN));
     public static final Block HANGING_STONE_SIGN = createHangingSignBlock("stone_hanging_sign", "stone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.STONE));
-    public static final Block HANGING_WALL_STONE_SIGN = createWallHangingSignBlock("stone_wall_hanging_sign", "stone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.STONE));
-
+    public static final Block HANGING_WALL_STONE_SIGN = createWallHangingSignBlock("stone_wall_hanging_sign", "stone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.STONE).dropsLike(HANGING_STONE_SIGN));
     public static final BlockFamily STONE_FAMILY = BlockFamilies.register(STONE_MOD).sign(STONE_SIGN, WALL_STONE_SIGN).build();
+
+
+    public static final Block COBBLESTONE_MOD = registerBlock("cobblestone_mod",
+            new Block(AbstractBlock.Settings.copy(Blocks.COBBLESTONE)));
+    public static final Block COBBLESTONE_SIGN = createSignBlock("cobblestone_sign", "cobblestone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.COBBLESTONE));
+    public static final Block WALL_COBBLESTONE_SIGN = createWallSignBlock("cobblestone_wall_sign", "cobblestone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.COBBLESTONE).dropsLike(COBBLESTONE_SIGN));
+    public static final Block HANGING_COBBLESTONE_SIGN = createHangingSignBlock("cobblestone_hanging_sign", "cobblestone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.COBBLESTONE));
+    public static final Block HANGING_WALL_COBBLESTONE_SIGN = createWallHangingSignBlock("cobblestone_wall_hanging_sign", "cobblestone", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.COBBLESTONE).dropsLike(HANGING_COBBLESTONE_SIGN));
+    public static final BlockFamily COBBLESTONE_FAMILY = BlockFamilies.register(COBBLESTONE_MOD).sign(COBBLESTONE_SIGN, WALL_COBBLESTONE_SIGN).build();
 
 
 

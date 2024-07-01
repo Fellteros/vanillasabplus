@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "vanillasabplus:stone_hanging_sign"
+          "name": "vanillasabplus:cobblestone_sign"
         }
       ],
       "rolls": 1.0

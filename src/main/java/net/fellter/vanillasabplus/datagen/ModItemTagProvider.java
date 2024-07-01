@@ -38,7 +38,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.SMOOTH_STONE_CHEST_BOAT)
                 .add(ModItems.STONE_BRICKS_CHEST_BOAT)
                 .add(ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT)
-                .add(ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT)
-                .add(ModItems.GRANITE_CHEST_BOAT);
+                .add(ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT);
     }
 }

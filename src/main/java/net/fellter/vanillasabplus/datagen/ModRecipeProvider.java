@@ -32,6 +32,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.COBBLESTONE_BOAT, Blocks.COBBLESTONE);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.COBBLESTONE_CHEST_BOAT, Blocks.COBBLESTONE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.COBBLESTONE_HANGING_SIGN, Blocks.COBBLESTONE);
+        RecipeProvider.createSignRecipe(ModItems.COBBLESTONE_SIGN, Ingredient.ofItems(Blocks.COBBLESTONE));
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.MOSSY_COBBLESTONE_BOAT, Blocks.MOSSY_COBBLESTONE);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.MOSSY_COBBLESTONE_CHEST_BOAT, Blocks.MOSSY_COBBLESTONE);

@@ -19,6 +19,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.STONE).family(ModBlocks.STONE_FAMILY);
         blockStateModelGenerator.registerHangingSign(Blocks.STONE, ModBlocks.HANGING_STONE_SIGN, ModBlocks.HANGING_WALL_STONE_SIGN);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.COBBLESTONE).family(ModBlocks.COBBLESTONE_FAMILY);
+        blockStateModelGenerator.registerHangingSign(Blocks.COBBLESTONE, ModBlocks.HANGING_COBBLESTONE_SIGN, ModBlocks.HANGING_WALL_COBBLESTONE_SIGN);
     }
 
     @Override

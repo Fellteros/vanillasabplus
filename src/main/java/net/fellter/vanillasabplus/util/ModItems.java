@@ -31,6 +31,8 @@ public class ModItems {
 
     public static final Item COBBLESTONE_BOAT = registerBoatItem("cobblestone_boat", BoatTypes.COBBLESTONE, false, new Item.Settings().maxCount(1));
     public static final Item COBBLESTONE_CHEST_BOAT = registerBoatItem("cobblestone_chest_boat", BoatTypes.COBBLESTONE, true, new Item.Settings().maxCount(1));
+    public static final Item COBBLESTONE_SIGN = registerItem("cobblestone_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.COBBLESTONE_SIGN, ModBlocks.WALL_COBBLESTONE_SIGN));
+    public static final Item COBBLESTONE_HANGING_SIGN = registerItem("cobblestone_hanging_sign", new HangingSignItem(ModBlocks.HANGING_COBBLESTONE_SIGN, ModBlocks.HANGING_WALL_COBBLESTONE_SIGN, new Item.Settings().maxCount(16)));
 
     public static final Item MOSSY_COBBLESTONE_BOAT = registerBoatItem("mossy_cobblestone_boat", BoatTypes.MOSSY_COBBLESTONE, false, new Item.Settings().maxCount(1));
     public static final Item MOSSY_COBBLESTONE_CHEST_BOAT = registerBoatItem("mossy_cobblestone_chest_boat", BoatTypes.MOSSY_COBBLESTONE, true, new Item.Settings().maxCount(1));
