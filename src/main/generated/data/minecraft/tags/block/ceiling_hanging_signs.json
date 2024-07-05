@@ -1,6 +1,12 @@
 {
   "values": [
-    "vanillasabplus:stone_wall_hanging_sign",
-    "vanillasabplus:cobblestone_wall_hanging_sign"
+    "vanillasabplus:stone_hanging_sign",
+    "vanillasabplus:cobblestone_hanging_sign",
+    "vanillasabplus:mossy_cobblestone_hanging_sign",
+    "vanillasabplus:smooth_stone_hanging_sign",
+    "vanillasabplus:stone_bricks_hanging_sign",
+    "vanillasabplus:cracked_stone_bricks_hanging_sign",
+    "vanillasabplus:mossy_stone_bricks_hanging_sign",
+    "vanillasabplus:granite_hanging_sign"
   ]
 }

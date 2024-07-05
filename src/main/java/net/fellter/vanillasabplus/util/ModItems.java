@@ -36,21 +36,33 @@ public class ModItems {
 
     public static final Item MOSSY_COBBLESTONE_BOAT = registerBoatItem("mossy_cobblestone_boat", BoatTypes.MOSSY_COBBLESTONE, false, new Item.Settings().maxCount(1));
     public static final Item MOSSY_COBBLESTONE_CHEST_BOAT = registerBoatItem("mossy_cobblestone_chest_boat", BoatTypes.MOSSY_COBBLESTONE, true, new Item.Settings().maxCount(1));
+    public static final Item MOSSY_COBBLESTONE_SIGN = registerItem("mossy_cobblestone_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.MOSSY_COBBLESTONE_SIGN, ModBlocks.WALL_MOSSY_COBBLESTONE_SIGN));
+    public static final Item MOSSY_COBBLESTONE_HANGING_SIGN = registerItem("mossy_cobblestone_hanging_sign", new HangingSignItem(ModBlocks.HANGING_MOSSY_COBBLESTONE_SIGN, ModBlocks.HANGING_WALL_MOSSY_COBBLESTONE_SIGN, new Item.Settings().maxCount(16)));
 
     public static final Item SMOOTH_STONE_BOAT = registerBoatItem("smooth_stone_boat", BoatTypes.SMOOTH_STONE, false, new Item.Settings().maxCount(1));
     public static final Item SMOOTH_STONE_CHEST_BOAT = registerBoatItem("smooth_stone_chest_boat", BoatTypes.SMOOTH_STONE, true, new Item.Settings().maxCount(1));
+    public static final Item SMOOTH_STONE_SIGN = registerItem("smooth_stone_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.SMOOTH_STONE_SIGN, ModBlocks.WALL_SMOOTH_STONE_SIGN));
+    public static final Item SMOOTH_STONE_HANGING_SIGN = registerItem("smooth_stone_hanging_sign", new HangingSignItem(ModBlocks.HANGING_SMOOTH_STONE_SIGN, ModBlocks.HANGING_WALL_SMOOTH_STONE_SIGN, new Item.Settings().maxCount(16)));
 
     public static final Item STONE_BRICKS_BOAT = registerBoatItem("stone_bricks_boat", BoatTypes.STONE_BRICKS, false, new Item.Settings().maxCount(1));
     public static final Item STONE_BRICKS_CHEST_BOAT = registerBoatItem("stone_bricks_chest_boat", BoatTypes.STONE_BRICKS, true, new Item.Settings().maxCount(1));
+    public static final Item STONE_BRICKS_SIGN = registerItem("stone_bricks_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.STONE_BRICKS_SIGN, ModBlocks.WALL_STONE_BRICKS_SIGN));
+    public static final Item STONE_BRICKS_HANGING_SIGN = registerItem("stone_bricks_hanging_sign", new HangingSignItem(ModBlocks.HANGING_STONE_BRICKS_SIGN, ModBlocks.HANGING_WALL_STONE_BRICKS_SIGN, new Item.Settings().maxCount(16)));
 
     public static final Item CRACKED_STONE_BRICKS_BOAT = registerBoatItem("cracked_stone_bricks_boat", BoatTypes.CRACKED_STONE_BRICKS, false, new Item.Settings().maxCount(1));
     public static final Item CRACKED_STONE_BRICKS_CHEST_BOAT = registerBoatItem("cracked_stone_bricks_chest_boat", BoatTypes.CRACKED_STONE_BRICKS, true, new Item.Settings().maxCount(1));
+    public static final Item CRACKED_STONE_BRICKS_SIGN = registerItem("cracked_stone_bricks_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.CRACKED_STONE_BRICKS_SIGN, ModBlocks.WALL_CRACKED_STONE_BRICKS_SIGN));
+    public static final Item CRACKED_STONE_BRICKS_HANGING_SIGN = registerItem("cracked_stone_bricks_hanging_sign", new HangingSignItem(ModBlocks.HANGING_CRACKED_STONE_BRICKS_SIGN, ModBlocks.HANGING_WALL_CRACKED_STONE_BRICKS_SIGN, new Item.Settings().maxCount(16)));
 
     public static final Item MOSSY_STONE_BRICKS_BOAT = registerBoatItem("mossy_stone_bricks_boat", BoatTypes.MOSSY_STONE_BRICKS, false, new Item.Settings().maxCount(1));
     public static final Item MOSSY_STONE_BRICKS_CHEST_BOAT = registerBoatItem("mossy_stone_bricks_chest_boat", BoatTypes.MOSSY_STONE_BRICKS, true, new Item.Settings().maxCount(1));
+    public static final Item MOSSY_STONE_BRICKS_SIGN = registerItem("mossy_stone_bricks_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.MOSSY_STONE_BRICKS_SIGN, ModBlocks.WALL_MOSSY_STONE_BRICKS_SIGN));
+    public static final Item MOSSY_STONE_BRICKS_HANGING_SIGN = registerItem("mossy_stone_bricks_hanging_sign", new HangingSignItem(ModBlocks.HANGING_MOSSY_STONE_BRICKS_SIGN, ModBlocks.HANGING_WALL_MOSSY_STONE_BRICKS_SIGN, new Item.Settings().maxCount(16)));
 
     public static final Item GRANITE_BOAT = registerBoatItem("granite_boat", BoatTypes.GRANITE, false, new Item.Settings().maxCount(1));
     public static final Item GRANITE_CHEST_BOAT = registerBoatItem("granite_chest_boat", BoatTypes.GRANITE, true, new Item.Settings().maxCount(1));
+    public static final Item GRANITE_SIGN = registerItem("granite_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.GRANITE_SIGN, ModBlocks.WALL_GRANITE_SIGN));
+    public static final Item GRANITE_HANGING_SIGN = registerItem("granite_hanging_sign", new HangingSignItem(ModBlocks.HANGING_GRANITE_SIGN, ModBlocks.HANGING_WALL_GRANITE_SIGN, new Item.Settings().maxCount(16)));
 
 
 

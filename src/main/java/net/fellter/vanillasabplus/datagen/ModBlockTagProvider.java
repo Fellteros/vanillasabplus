@@ -24,22 +24,70 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.COBBLESTONE_SIGN)
                 .add(ModBlocks.WALL_COBBLESTONE_SIGN)
                 .add(ModBlocks.HANGING_COBBLESTONE_SIGN)
-                .add(ModBlocks.HANGING_WALL_COBBLESTONE_SIGN);
+                .add(ModBlocks.HANGING_WALL_COBBLESTONE_SIGN)
+                .add(ModBlocks.MOSSY_COBBLESTONE_SIGN)
+                .add(ModBlocks.WALL_MOSSY_COBBLESTONE_SIGN)
+                .add(ModBlocks.HANGING_MOSSY_COBBLESTONE_SIGN)
+                .add(ModBlocks.HANGING_WALL_MOSSY_COBBLESTONE_SIGN)
+                .add(ModBlocks.SMOOTH_STONE_SIGN)
+                .add(ModBlocks.WALL_SMOOTH_STONE_SIGN)
+                .add(ModBlocks.HANGING_SMOOTH_STONE_SIGN)
+                .add(ModBlocks.HANGING_WALL_SMOOTH_STONE_SIGN)
+                .add(ModBlocks.STONE_BRICKS_SIGN)
+                .add(ModBlocks.WALL_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_WALL_STONE_BRICKS_SIGN)
+                .add(ModBlocks.CRACKED_STONE_BRICKS_SIGN)
+                .add(ModBlocks.WALL_CRACKED_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_CRACKED_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_WALL_CRACKED_STONE_BRICKS_SIGN)
+                .add(ModBlocks.MOSSY_STONE_BRICKS_SIGN)
+                .add(ModBlocks.WALL_MOSSY_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_MOSSY_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_WALL_MOSSY_STONE_BRICKS_SIGN)
+                .add(ModBlocks.GRANITE_SIGN)
+                .add(ModBlocks.WALL_GRANITE_SIGN)
+                .add(ModBlocks.HANGING_GRANITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_GRANITE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.SIGNS)
                 .add(ModBlocks.STONE_SIGN)
-                .add(ModBlocks.COBBLESTONE_SIGN);
+                .add(ModBlocks.COBBLESTONE_SIGN)
+                .add(ModBlocks.MOSSY_COBBLESTONE_SIGN)
+                .add(ModBlocks.SMOOTH_STONE_SIGN)
+                .add(ModBlocks.STONE_BRICKS_SIGN)
+                .add(ModBlocks.CRACKED_STONE_BRICKS_SIGN)
+                .add(ModBlocks.MOSSY_STONE_BRICKS_SIGN)
+                .add(ModBlocks.GRANITE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
                 .add(ModBlocks.WALL_STONE_SIGN)
-                .add(ModBlocks.WALL_COBBLESTONE_SIGN);
+                .add(ModBlocks.WALL_COBBLESTONE_SIGN)
+                .add(ModBlocks.WALL_MOSSY_COBBLESTONE_SIGN)
+                .add(ModBlocks.WALL_SMOOTH_STONE_SIGN)
+                .add(ModBlocks.WALL_STONE_BRICKS_SIGN)
+                .add(ModBlocks.WALL_CRACKED_STONE_BRICKS_SIGN)
+                .add(ModBlocks.WALL_MOSSY_STONE_BRICKS_SIGN)
+                .add(ModBlocks.WALL_GRANITE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
-                .add(ModBlocks.HANGING_STONE_SIGN)
-                .add(ModBlocks.HANGING_COBBLESTONE_SIGN);
+                .add(ModBlocks.HANGING_WALL_STONE_SIGN)
+                .add(ModBlocks.HANGING_WALL_COBBLESTONE_SIGN)
+                .add(ModBlocks.HANGING_WALL_MOSSY_COBBLESTONE_SIGN)
+                .add(ModBlocks.HANGING_WALL_SMOOTH_STONE_SIGN)
+                .add(ModBlocks.HANGING_WALL_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_WALL_CRACKED_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_WALL_MOSSY_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_WALL_GRANITE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
-                .add(ModBlocks.HANGING_WALL_STONE_SIGN)
-                .add(ModBlocks.HANGING_WALL_COBBLESTONE_SIGN);
+                .add(ModBlocks.HANGING_STONE_SIGN)
+                .add(ModBlocks.HANGING_COBBLESTONE_SIGN)
+                .add(ModBlocks.HANGING_MOSSY_COBBLESTONE_SIGN)
+                .add(ModBlocks.HANGING_SMOOTH_STONE_SIGN)
+                .add(ModBlocks.HANGING_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_CRACKED_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_MOSSY_STONE_BRICKS_SIGN)
+                .add(ModBlocks.HANGING_GRANITE_SIGN);
     }
 }

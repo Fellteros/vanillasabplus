@@ -1,6 +1,12 @@
 {
   "values": [
     "vanillasabplus:stone_sign",
-    "vanillasabplus:cobblestone_sign"
+    "vanillasabplus:cobblestone_sign",
+    "vanillasabplus:mossy_cobblestone_sign",
+    "vanillasabplus:smooth_stone_sign",
+    "vanillasabplus:stone_bricks_sign",
+    "vanillasabplus:cracked_stone_bricks_sign",
+    "vanillasabplus:mossy_stone_bricks_sign",
+    "vanillasabplus:granite_sign"
   ]
 }

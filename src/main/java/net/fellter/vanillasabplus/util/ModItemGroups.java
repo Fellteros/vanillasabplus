@@ -58,6 +58,24 @@ public class ModItemGroups {
                         entries.add(ModItems.COBBLESTONE_SIGN);
                         entries.add(ModItems.COBBLESTONE_HANGING_SIGN);
 
+                        entries.add(ModItems.MOSSY_COBBLESTONE_SIGN);
+                        entries.add(ModItems.MOSSY_COBBLESTONE_HANGING_SIGN);
+
+                        entries.add(ModItems.SMOOTH_STONE_SIGN);
+                        entries.add(ModItems.SMOOTH_STONE_HANGING_SIGN);
+
+                        entries.add(ModItems.STONE_BRICKS_SIGN);
+                        entries.add(ModItems.STONE_BRICKS_HANGING_SIGN);
+
+                        entries.add(ModItems.CRACKED_STONE_BRICKS_SIGN);
+                        entries.add(ModItems.CRACKED_STONE_BRICKS_HANGING_SIGN);
+
+                        entries.add(ModItems.MOSSY_STONE_BRICKS_SIGN);
+                        entries.add(ModItems.MOSSY_STONE_BRICKS_HANGING_SIGN);
+
+                        entries.add(ModItems.GRANITE_SIGN);
+                        entries.add(ModItems.GRANITE_HANGING_SIGN);
+
             })).build());
 
     public static void registerItemGroups() {

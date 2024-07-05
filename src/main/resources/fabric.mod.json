@@ -3,9 +3,9 @@
 	"id": "vanillasabplus",
 	"version": "${version}",
 	"name": "vanillasabplus",
-	"description": "Mod adding sign, hanging sign and boat variants to all vanilla blocks.",
+	"description": "Mod adding signs, hanging signs and boats to all vanilla blocks.",
 	"authors": [
-		"Fellter!"
+		"Fellter"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

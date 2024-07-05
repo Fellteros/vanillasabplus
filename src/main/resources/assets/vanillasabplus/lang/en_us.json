@@ -14,21 +14,31 @@
   "item.vanillasabplus.cobblestone_chest_boat": "Cobblestone Chest Boat",
   "block.vanillasabplus.cobblestone_sign": "Cobblestone Sign",
   "block.vanillasabplus.cobblestone_hanging_sign": "Cobblestone Hanging Sign",
-
+  
   "item.vanillasabplus.mossy_cobblestone_boat": "Mossy Cobblestone Boat",
   "item.vanillasabplus.mossy_cobblestone_chest_boat": "Mossy Cobblestone Chest Boat",
+  "block.vanillasabplus.mossy_cobblestone_sign": "Mossy Cobblestone Sign",
+  "block.vanillasabplus.mossy_cobblestone_hanging_sign": "Mossy Cobblestone Hanging Sign",
 
   "item.vanillasabplus.smooth_stone_boat": "Smooth Stone Boat",
   "item.vanillasabplus.smooth_stone_chest_boat": "Smooth Stone Chest Boat",
+  "block.vanillasabplus.smooth_stone_sign": "Smooth Stone Sign",
+  "block.vanillasabplus.smooth_stone_hanging_sign": "Smooth Stone Hanging Sign",
 
   "item.vanillasabplus.stone_bricks_boat": "Stone Brick Boat",
   "item.vanillasabplus.stone_bricks_chest_boat": "Stone Brick Chest Boat",
+  "block.vanillasabplus.stone_bricks_sign": "Stone Brick Sign",
+  "block.vanillasabplus.stone_bricks_hanging_sign": "Stone Brick Hanging Sign",
 
   "item.vanillasabplus.cracked_stone_bricks_boat": "Cracked Stone Brick Boat",
   "item.vanillasabplus.cracked_stone_bricks_chest_boat": "Cracked Stone Brick Chest Boat",
+  "block.vanillasabplus.cracked_stone_bricks_sign": "Cracked Stone Brick Sign",
+  "block.vanillasabplus.cracked_stone_bricks_hanging_sign": "Cracked Stone Brick Hanging Sign",
 
   "item.vanillasabplus.mossy_stone_bricks_boat": "Mossy Stone Brick Boat",
   "item.vanillasabplus.mossy_stone_bricks_chest_boat": "Mossy Stone Brick Chest Boat",
+  "block.vanillasabplus.mossy_stone_bricks_sign": "Mossy Stone Brick Sign",
+  "block.vanillasabplus.mossy_stone_bricks_hanging_sign": "Mossy Stone Brick Hanging Sign",
 
   "item.vanillasabplus.granite_boat": "Granite Boat",
   "item.vanillasabplus.granite_chest_boat": "Granite Chest Boat",

@@ -37,18 +37,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.MOSSY_COBBLESTONE_BOAT, Blocks.MOSSY_COBBLESTONE);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.MOSSY_COBBLESTONE_CHEST_BOAT, Blocks.MOSSY_COBBLESTONE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.MOSSY_COBBLESTONE_HANGING_SIGN, Blocks.MOSSY_COBBLESTONE);
+        RecipeProvider.createSignRecipe(ModItems.MOSSY_COBBLESTONE_SIGN, Ingredient.ofItems(Blocks.MOSSY_COBBLESTONE));
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.SMOOTH_STONE_BOAT, Blocks.SMOOTH_STONE);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.SMOOTH_STONE_CHEST_BOAT, Blocks.SMOOTH_STONE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.SMOOTH_STONE_HANGING_SIGN, Blocks.SMOOTH_STONE);
+        RecipeProvider.createSignRecipe(ModItems.SMOOTH_STONE_SIGN, Ingredient.ofItems(Blocks.SMOOTH_STONE));
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.STONE_BRICKS_BOAT, Blocks.STONE_BRICKS);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.STONE_BRICKS_CHEST_BOAT, Blocks.STONE_BRICKS);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.STONE_BRICKS_HANGING_SIGN, Blocks.STONE_BRICKS);
+        RecipeProvider.createSignRecipe(ModItems.STONE_BRICKS_SIGN, Ingredient.ofItems(Blocks.STONE_BRICKS));
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_BOAT, Blocks.CRACKED_STONE_BRICKS);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT, Blocks.CRACKED_STONE_BRICKS);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_HANGING_SIGN, Blocks.CRACKED_STONE_BRICKS);
+        RecipeProvider.createSignRecipe(ModItems.CRACKED_STONE_BRICKS_SIGN, Ingredient.ofItems(Blocks.CRACKED_STONE_BRICKS));
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_BOAT, Blocks.MOSSY_STONE_BRICKS);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT, Blocks.MOSSY_STONE_BRICKS);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_HANGING_SIGN, Blocks.MOSSY_STONE_BRICKS);
+        RecipeProvider.createSignRecipe(ModItems.MOSSY_STONE_BRICKS_SIGN, Ingredient.ofItems(Blocks.MOSSY_STONE_BRICKS));
 
         RecipeProvider.offerBoatRecipe(exporter, ModItems.GRANITE_BOAT, Blocks.GRANITE);
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.GRANITE_CHEST_BOAT, Blocks.GRANITE);
