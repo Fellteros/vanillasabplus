@@ -11,6 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.NotNull;
 
 import static net.fellter.vanillasabplus.boat.item.ModBoatItem.registerBoatDispenserBehavior;
 
@@ -22,7 +23,6 @@ public class ModItems {
     
     public static final Item WARPED_BOAT = registerBoatItem("warped_boat", BoatTypes.WARPED, false, new Item.Settings().maxCount(1));
     public static final Item WARPED_CHEST_BOAT = registerBoatItem("warped_chest_boat", BoatTypes.WARPED, true, new Item.Settings().maxCount(1));
-
     
     public static final Item STONE_BOAT = registerBoatItem("stone_boat", BoatTypes.STONE, false, new Item.Settings().maxCount(1));
     public static final Item STONE_CHEST_BOAT = registerBoatItem("stone_chest_boat", BoatTypes.STONE, true, new Item.Settings().maxCount(1));

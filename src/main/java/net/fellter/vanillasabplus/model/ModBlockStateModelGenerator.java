@@ -2,7 +2,6 @@ package net.fellter.vanillasabplus.model;
 
 import com.google.gson.JsonElement;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.BlockStateSupplier;
 import net.minecraft.data.client.Models;

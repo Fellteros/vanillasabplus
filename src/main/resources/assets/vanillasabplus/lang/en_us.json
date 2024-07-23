@@ -42,6 +42,8 @@
 
   "item.vanillasabplus.granite_boat": "Granite Boat",
   "item.vanillasabplus.granite_chest_boat": "Granite Chest Boat",
+  "block.vanillasabplus.granite_sign": "Granite Sign",
+  "block.vanillasabplus.granite_hanging_sign": "Granite Hanging Sign",
 
   "itemgroup.vsabp_boat": "Vanilla+ Boats",
   "itemgroup.vsabp_sign": "Vanilla+ Signs"
