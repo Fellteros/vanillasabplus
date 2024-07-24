@@ -56,6 +56,31 @@ public class ModBlocks {
     public static final Block HANGING_GRANITE_SIGN = createHangingSignBlock("granite_hanging_sign", "granite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.GRANITE));
     public static final Block HANGING_WALL_GRANITE_SIGN = createWallHangingSignBlock("granite_wall_hanging_sign", "granite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.GRANITE).dropsLike(HANGING_GRANITE_SIGN));
 
+    public static final Block POLISHED_GRANITE_SIGN = createSignBlock("polished_granite_sign", "polished_granite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_GRANITE));
+    public static final Block WALL_POLISHED_GRANITE_SIGN = createWallSignBlock("polished_granite_wall_sign", "polished_granite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_GRANITE).dropsLike(POLISHED_GRANITE_SIGN));
+    public static final Block HANGING_POLISHED_GRANITE_SIGN = createHangingSignBlock("polished_granite_hanging_sign", "polished_granite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_GRANITE));
+    public static final Block HANGING_WALL_POLISHED_GRANITE_SIGN = createWallHangingSignBlock("polished_granite_wall_hanging_sign", "polished_granite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_GRANITE).dropsLike(HANGING_POLISHED_GRANITE_SIGN));
+
+    public static final Block DIORITE_SIGN = createSignBlock("diorite_sign", "diorite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.DIORITE));
+    public static final Block WALL_DIORITE_SIGN = createWallSignBlock("diorite_wall_sign", "diorite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.DIORITE).dropsLike(DIORITE_SIGN));
+    public static final Block HANGING_DIORITE_SIGN = createHangingSignBlock("diorite_hanging_sign", "diorite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.DIORITE));
+    public static final Block HANGING_WALL_DIORITE_SIGN = createWallHangingSignBlock("diorite_wall_hanging_sign", "diorite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.DIORITE).dropsLike(HANGING_DIORITE_SIGN));
+
+    public static final Block POLISHED_DIORITE_SIGN = createSignBlock("polished_diorite_sign", "polished_diorite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_DIORITE));
+    public static final Block WALL_POLISHED_DIORITE_SIGN = createWallSignBlock("polished_diorite_wall_sign", "polished_diorite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_DIORITE).dropsLike(POLISHED_DIORITE_SIGN));
+    public static final Block HANGING_POLISHED_DIORITE_SIGN = createHangingSignBlock("polished_diorite_hanging_sign", "polished_diorite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_DIORITE));
+    public static final Block HANGING_WALL_POLISHED_DIORITE_SIGN = createWallHangingSignBlock("polished_diorite_wall_hanging_sign", "polished_diorite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_DIORITE).dropsLike(HANGING_POLISHED_DIORITE_SIGN));
+
+    public static final Block ANDESITE_SIGN = createSignBlock("andesite_sign", "andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.ANDESITE));
+    public static final Block WALL_ANDESITE_SIGN = createWallSignBlock("andesite_wall_sign", "andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.ANDESITE).dropsLike(ANDESITE_SIGN));
+    public static final Block HANGING_ANDESITE_SIGN = createHangingSignBlock("andesite_hanging_sign", "andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.ANDESITE));
+    public static final Block HANGING_WALL_ANDESITE_SIGN = createWallHangingSignBlock("andesite_wall_hanging_sign", "andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.ANDESITE).dropsLike(HANGING_ANDESITE_SIGN));
+    
+    public static final Block POLISHED_ANDESITE_SIGN = createSignBlock("polished_andesite_sign", "polished_andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE));
+    public static final Block WALL_POLISHED_ANDESITE_SIGN = createWallSignBlock("polished_andesite_wall_sign", "polished_andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE).dropsLike(POLISHED_ANDESITE_SIGN));
+    public static final Block HANGING_POLISHED_ANDESITE_SIGN = createHangingSignBlock("polished_andesite_hanging_sign", "polished_andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE));
+    public static final Block HANGING_WALL_POLISHED_ANDESITE_SIGN = createWallHangingSignBlock("polished_andesite_wall_hanging_sign", "polished_andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE).dropsLike(HANGING_POLISHED_ANDESITE_SIGN));
+
 
 
 

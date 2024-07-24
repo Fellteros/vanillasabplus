@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "vanillasabplus:item/diorite_hanging_sign"
+  }
+}

@@ -69,6 +69,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.GRANITE_CHEST_BOAT, Blocks.GRANITE);
         RecipeProvider.offerHangingSignRecipe(exporter, ModItems.GRANITE_HANGING_SIGN, Blocks.GRANITE);
         ModRecipeProvider.offerSignRecipe(exporter, ModItems.GRANITE_SIGN, Blocks.GRANITE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.POLISHED_GRANITE_BOAT, Blocks.POLISHED_GRANITE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_GRANITE_CHEST_BOAT, Blocks.POLISHED_GRANITE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_GRANITE_HANGING_SIGN, Blocks.POLISHED_GRANITE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_GRANITE_SIGN, Blocks.POLISHED_GRANITE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.DIORITE_BOAT, Blocks.DIORITE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.DIORITE_CHEST_BOAT, Blocks.DIORITE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.DIORITE_HANGING_SIGN, Blocks.DIORITE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.DIORITE_SIGN, Blocks.DIORITE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.POLISHED_DIORITE_BOAT, Blocks.POLISHED_DIORITE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_DIORITE_CHEST_BOAT, Blocks.POLISHED_DIORITE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_DIORITE_HANGING_SIGN, Blocks.POLISHED_DIORITE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_DIORITE_SIGN, Blocks.POLISHED_DIORITE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.ANDESITE_BOAT, Blocks.ANDESITE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.ANDESITE_CHEST_BOAT, Blocks.ANDESITE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.ANDESITE_HANGING_SIGN, Blocks.ANDESITE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.ANDESITE_SIGN, Blocks.ANDESITE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.POLISHED_ANDESITE_BOAT, Blocks.POLISHED_ANDESITE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_ANDESITE_CHEST_BOAT, Blocks.POLISHED_ANDESITE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_ANDESITE_HANGING_SIGN, Blocks.POLISHED_ANDESITE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_ANDESITE_SIGN, Blocks.POLISHED_ANDESITE);
     }
 
     public static void offerSignRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {

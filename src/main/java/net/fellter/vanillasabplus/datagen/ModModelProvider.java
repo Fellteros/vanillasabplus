@@ -42,10 +42,30 @@ public class ModModelProvider extends FabricModelProvider {
 
         registerSign(bsmg, Blocks.GRANITE, GRANITE_SIGN, WALL_GRANITE_SIGN);
         bsmg.registerHangingSign(Blocks.GRANITE, HANGING_GRANITE_SIGN, HANGING_WALL_GRANITE_SIGN);
+
+        registerSign(bsmg, Blocks.POLISHED_GRANITE, POLISHED_GRANITE_SIGN, WALL_POLISHED_GRANITE_SIGN);
+        bsmg.registerHangingSign(Blocks.POLISHED_GRANITE, HANGING_POLISHED_GRANITE_SIGN, HANGING_WALL_POLISHED_GRANITE_SIGN);
+
+        registerSign(bsmg, Blocks.DIORITE, DIORITE_SIGN, WALL_DIORITE_SIGN);
+        bsmg.registerHangingSign(Blocks.DIORITE, HANGING_DIORITE_SIGN, HANGING_WALL_DIORITE_SIGN);
+
+        registerSign(bsmg, Blocks.POLISHED_DIORITE, POLISHED_DIORITE_SIGN, WALL_POLISHED_DIORITE_SIGN);
+        bsmg.registerHangingSign(Blocks.POLISHED_DIORITE, HANGING_POLISHED_DIORITE_SIGN, HANGING_WALL_POLISHED_DIORITE_SIGN);
+
+        registerSign(bsmg, Blocks.ANDESITE, ANDESITE_SIGN, WALL_ANDESITE_SIGN);
+        bsmg.registerHangingSign(Blocks.ANDESITE, HANGING_ANDESITE_SIGN, HANGING_WALL_ANDESITE_SIGN);
+
+        registerSign(bsmg, Blocks.POLISHED_ANDESITE, POLISHED_ANDESITE_SIGN, WALL_POLISHED_ANDESITE_SIGN);
+        bsmg.registerHangingSign(Blocks.POLISHED_ANDESITE, HANGING_POLISHED_ANDESITE_SIGN, HANGING_WALL_POLISHED_ANDESITE_SIGN);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
+        itemModelGenerator.register(ModItems.VSABP_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VSABP_SIGN, Models.GENERATED);
+
+
         itemModelGenerator.register(ModItems.CRIMSON_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRIMSON_CHEST_BOAT, Models.GENERATED);
         
@@ -75,6 +95,21 @@ public class ModModelProvider extends FabricModelProvider {
         
         itemModelGenerator.register(ModItems.GRANITE_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRANITE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.POLISHED_GRANITE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POLISHED_GRANITE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.DIORITE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIORITE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.POLISHED_DIORITE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POLISHED_DIORITE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.ANDESITE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANDESITE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.POLISHED_ANDESITE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POLISHED_ANDESITE_CHEST_BOAT, Models.GENERATED);
 
     }
 }

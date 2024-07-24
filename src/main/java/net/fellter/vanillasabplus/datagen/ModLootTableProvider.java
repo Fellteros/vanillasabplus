@@ -59,5 +59,30 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WALL_GRANITE_SIGN);
         addDrop(ModBlocks.HANGING_GRANITE_SIGN);
         addDrop(ModBlocks.HANGING_WALL_GRANITE_SIGN);
+
+        addDrop(ModBlocks.POLISHED_GRANITE_SIGN);
+        addDrop(ModBlocks.WALL_POLISHED_GRANITE_SIGN);
+        addDrop(ModBlocks.HANGING_POLISHED_GRANITE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_POLISHED_GRANITE_SIGN);
+
+        addDrop(ModBlocks.DIORITE_SIGN);
+        addDrop(ModBlocks.WALL_DIORITE_SIGN);
+        addDrop(ModBlocks.HANGING_DIORITE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_DIORITE_SIGN);
+
+        addDrop(ModBlocks.POLISHED_DIORITE_SIGN);
+        addDrop(ModBlocks.WALL_POLISHED_DIORITE_SIGN);
+        addDrop(ModBlocks.HANGING_POLISHED_DIORITE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_POLISHED_DIORITE_SIGN);
+
+        addDrop(ModBlocks.ANDESITE_SIGN);
+        addDrop(ModBlocks.WALL_ANDESITE_SIGN);
+        addDrop(ModBlocks.HANGING_ANDESITE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_ANDESITE_SIGN);
+
+        addDrop(ModBlocks.POLISHED_ANDESITE_SIGN);
+        addDrop(ModBlocks.WALL_POLISHED_ANDESITE_SIGN);
+        addDrop(ModBlocks.HANGING_POLISHED_ANDESITE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_POLISHED_ANDESITE_SIGN);
     }
 }

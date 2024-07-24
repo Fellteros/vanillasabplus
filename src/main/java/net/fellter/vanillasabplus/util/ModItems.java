@@ -18,6 +18,9 @@ import static net.fellter.vanillasabplus.boat.item.ModBoatItem.registerBoatDispe
 
 public class ModItems {
 
+    public static final Item VSABP_SIGN = registerItem("vsabp_sign", new Item(new Item.Settings().maxCount(1)));
+    public static final Item VSABP_BOAT = registerItem("vsabp_boat", new Item(new Item.Settings().maxCount(1)));
+
     public static final Item CRIMSON_BOAT = registerBoatItem("crimson_boat", BoatTypes.CRIMSON, false, new Item.Settings().maxCount(1));
     public static final Item CRIMSON_CHEST_BOAT = registerBoatItem("crimson_chest_boat", BoatTypes.CRIMSON, true, new Item.Settings().maxCount(1));
     
@@ -63,6 +66,32 @@ public class ModItems {
     public static final Item GRANITE_CHEST_BOAT = registerBoatItem("granite_chest_boat", BoatTypes.GRANITE, true, new Item.Settings().maxCount(1));
     public static final Item GRANITE_SIGN = registerItem("granite_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.GRANITE_SIGN, ModBlocks.WALL_GRANITE_SIGN));
     public static final Item GRANITE_HANGING_SIGN = registerItem("granite_hanging_sign", new HangingSignItem(ModBlocks.HANGING_GRANITE_SIGN, ModBlocks.HANGING_WALL_GRANITE_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item POLISHED_GRANITE_BOAT = registerBoatItem("polished_granite_boat", BoatTypes.POLISHED_GRANITE, false, new Item.Settings().maxCount(1));
+    public static final Item POLISHED_GRANITE_CHEST_BOAT = registerBoatItem("polished_granite_chest_boat", BoatTypes.POLISHED_GRANITE, true, new Item.Settings().maxCount(1));
+    public static final Item POLISHED_GRANITE_SIGN = registerItem("polished_granite_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.POLISHED_GRANITE_SIGN, ModBlocks.WALL_POLISHED_GRANITE_SIGN));
+    public static final Item POLISHED_GRANITE_HANGING_SIGN = registerItem("polished_granite_hanging_sign", new HangingSignItem(ModBlocks.HANGING_POLISHED_GRANITE_SIGN, ModBlocks.HANGING_WALL_POLISHED_GRANITE_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item DIORITE_BOAT = registerBoatItem("diorite_boat", BoatTypes.DIORITE, false, new Item.Settings().maxCount(1));
+    public static final Item DIORITE_CHEST_BOAT = registerBoatItem("diorite_chest_boat", BoatTypes.DIORITE, true, new Item.Settings().maxCount(1));
+    public static final Item DIORITE_SIGN = registerItem("diorite_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.DIORITE_SIGN, ModBlocks.WALL_DIORITE_SIGN));
+    public static final Item DIORITE_HANGING_SIGN = registerItem("diorite_hanging_sign", new HangingSignItem(ModBlocks.HANGING_DIORITE_SIGN, ModBlocks.HANGING_WALL_DIORITE_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item POLISHED_DIORITE_BOAT = registerBoatItem("polished_diorite_boat", BoatTypes.POLISHED_DIORITE, false, new Item.Settings().maxCount(1));
+    public static final Item POLISHED_DIORITE_CHEST_BOAT = registerBoatItem("polished_diorite_chest_boat", BoatTypes.POLISHED_DIORITE, true, new Item.Settings().maxCount(1));
+    public static final Item POLISHED_DIORITE_SIGN = registerItem("polished_diorite_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.POLISHED_DIORITE_SIGN, ModBlocks.WALL_POLISHED_DIORITE_SIGN));
+    public static final Item POLISHED_DIORITE_HANGING_SIGN = registerItem("polished_diorite_hanging_sign", new HangingSignItem(ModBlocks.HANGING_POLISHED_DIORITE_SIGN, ModBlocks.HANGING_WALL_POLISHED_DIORITE_SIGN,
+            new Item.Settings().maxCount(16)));
+    
+    public static final Item ANDESITE_BOAT = registerBoatItem("andesite_boat", BoatTypes.ANDESITE, false, new Item.Settings().maxCount(1));
+    public static final Item ANDESITE_CHEST_BOAT = registerBoatItem("andesite_chest_boat", BoatTypes.ANDESITE, true, new Item.Settings().maxCount(1));
+    public static final Item ANDESITE_SIGN = registerItem("andesite_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.ANDESITE_SIGN, ModBlocks.WALL_ANDESITE_SIGN));
+    public static final Item ANDESITE_HANGING_SIGN = registerItem("andesite_hanging_sign", new HangingSignItem(ModBlocks.HANGING_ANDESITE_SIGN, ModBlocks.HANGING_WALL_ANDESITE_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item POLISHED_ANDESITE_BOAT = registerBoatItem("polished_andesite_boat", BoatTypes.POLISHED_ANDESITE, false, new Item.Settings().maxCount(1));
+    public static final Item POLISHED_ANDESITE_CHEST_BOAT = registerBoatItem("polished_andesite_chest_boat", BoatTypes.POLISHED_ANDESITE, true, new Item.Settings().maxCount(1));
+    public static final Item POLISHED_ANDESITE_SIGN = registerItem("polished_andesite_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.POLISHED_ANDESITE_SIGN, ModBlocks.WALL_POLISHED_ANDESITE_SIGN));
+    public static final Item POLISHED_ANDESITE_HANGING_SIGN = registerItem("polished_andesite_hanging_sign", new HangingSignItem(ModBlocks.HANGING_POLISHED_ANDESITE_SIGN, ModBlocks.HANGING_WALL_POLISHED_ANDESITE_SIGN, new Item.Settings().maxCount(16)));
 
 
 

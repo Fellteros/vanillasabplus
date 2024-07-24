@@ -9,6 +9,11 @@
     "vanillasabplus:stone_bricks_boat",
     "vanillasabplus:cracked_stone_bricks_boat",
     "vanillasabplus:mossy_stone_bricks_boat",
-    "vanillasabplus:granite_boat"
+    "vanillasabplus:granite_boat",
+    "vanillasabplus:polished_granite_boat",
+    "vanillasabplus:diorite_boat",
+    "vanillasabplus:polished_diorite_boat",
+    "vanillasabplus:andesite_boat",
+    "vanillasabplus:polished_andesite_boat"
   ]
 }

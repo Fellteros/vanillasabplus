@@ -13,7 +13,7 @@ public class ModItemGroups {
     public static final ItemGroup VSABP_BOAT_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(VanillaSABPlus.MOD_ID, "vsabp_boat"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.vsabp_boat"))
-                    .icon(() -> new ItemStack(ModItems.CRIMSON_BOAT)).entries(((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.VSABP_BOAT)).entries(((displayContext, entries) -> {
 
                         entries.add(ModItems.CRIMSON_BOAT);
                         entries.add(ModItems.CRIMSON_CHEST_BOAT);
@@ -45,12 +45,27 @@ public class ModItemGroups {
                         entries.add(ModItems.GRANITE_BOAT);
                         entries.add(ModItems.GRANITE_CHEST_BOAT);
 
+                        entries.add(ModItems.POLISHED_GRANITE_BOAT);
+                        entries.add(ModItems.POLISHED_GRANITE_CHEST_BOAT);
+
+                        entries.add(ModItems.DIORITE_BOAT);
+                        entries.add(ModItems.DIORITE_CHEST_BOAT);
+
+                        entries.add(ModItems.POLISHED_DIORITE_BOAT);
+                        entries.add(ModItems.POLISHED_DIORITE_CHEST_BOAT);
+
+                        entries.add(ModItems.ANDESITE_BOAT);
+                        entries.add(ModItems.ANDESITE_CHEST_BOAT);
+
+                        entries.add(ModItems.POLISHED_ANDESITE_BOAT);
+                        entries.add(ModItems.POLISHED_ANDESITE_CHEST_BOAT);
+
             })).build());
 
     public static final ItemGroup VSABP_SIGN_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(VanillaSABPlus.MOD_ID, "vsabp_sign"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.vsabp_sign"))
-                    .icon(() -> new ItemStack(ModItems.STONE_SIGN)).entries(((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.VSABP_SIGN)).entries(((displayContext, entries) -> {
 
                         entries.add(ModItems.STONE_SIGN);
                         entries.add(ModItems.HANGING_STONE_SIGN);
@@ -75,6 +90,21 @@ public class ModItemGroups {
 
                         entries.add(ModItems.GRANITE_SIGN);
                         entries.add(ModItems.GRANITE_HANGING_SIGN);
+
+                        entries.add(ModItems.POLISHED_GRANITE_SIGN);
+                        entries.add(ModItems.POLISHED_GRANITE_HANGING_SIGN);
+
+                        entries.add(ModItems.DIORITE_SIGN);
+                        entries.add(ModItems.DIORITE_HANGING_SIGN);
+
+                        entries.add(ModItems.POLISHED_DIORITE_SIGN);
+                        entries.add(ModItems.POLISHED_DIORITE_HANGING_SIGN);
+
+                        entries.add(ModItems.ANDESITE_SIGN);
+                        entries.add(ModItems.ANDESITE_HANGING_SIGN);
+
+                        entries.add(ModItems.POLISHED_ANDESITE_SIGN);
+                        entries.add(ModItems.POLISHED_ANDESITE_HANGING_SIGN);
 
             })).build());
 

@@ -44,7 +44,35 @@
   "item.vanillasabplus.granite_chest_boat": "Granite Chest Boat",
   "block.vanillasabplus.granite_sign": "Granite Sign",
   "block.vanillasabplus.granite_hanging_sign": "Granite Hanging Sign",
+  
+  "item.vanillasabplus.polished_granite_boat": "Polished Granite Boat",
+  "item.vanillasabplus.polished_granite_chest_boat": "Polished Granite Chest Boat",
+  "block.vanillasabplus.polished_granite_sign": "Polished Granite Sign",
+  "block.vanillasabplus.polished_granite_hanging_sign": "Polished Granite Hanging Sign",
+  
+  "item.vanillasabplus.diorite_boat": "Diorite Boat",
+  "item.vanillasabplus.diorite_chest_boat": "Diorite Chest Boat",
+  "block.vanillasabplus.diorite_sign": "Diorite Sign",
+  "block.vanillasabplus.diorite_hanging_sign": "Diorite Hanging Sign",
+  
+  "item.vanillasabplus.polished_diorite_boat": "Polished Diorite Boat",
+  "item.vanillasabplus.polished_diorite_chest_boat": "Polished Diorite Chest Boat",
+  "block.vanillasabplus.polished_diorite_sign": "Polished Diorite Sign",
+  "block.vanillasabplus.polished_diorite_hanging_sign": "Polished Diorite Hanging Sign",
+  
+  "item.vanillasabplus.andesite_boat": "Andesite Boat",
+  "item.vanillasabplus.andesite_chest_boat": "Andesite Chest Boat",
+  "block.vanillasabplus.andesite_sign": "Andesite Sign",
+  "block.vanillasabplus.andesite_hanging_sign": "Andesite Hanging Sign",
+  
+  "item.vanillasabplus.polished_andesite_boat": "Polished Andesite Boat",
+  "item.vanillasabplus.polished_andesite_chest_boat": "Polished Andesite Chest Boat",
+  "block.vanillasabplus.polished_andesite_sign": "Polished Andesite Sign",
+  "block.vanillasabplus.polished_andesite_hanging_sign": "Polished Andesite Hanging Sign",
 
   "itemgroup.vsabp_boat": "Vanilla+ Boats",
-  "itemgroup.vsabp_sign": "Vanilla+ Signs"
+  "itemgroup.vsabp_sign": "Vanilla+ Signs",
+
+  "item.vanillasabplus.vsabp_sign": "Vanilla+ Signs",
+  "item.vanillasabplus.vsabp_boat": "Vanilla+ Boats"
 }

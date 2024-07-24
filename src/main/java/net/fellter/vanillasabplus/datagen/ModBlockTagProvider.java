@@ -48,7 +48,27 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GRANITE_SIGN)
                 .add(ModBlocks.WALL_GRANITE_SIGN)
                 .add(ModBlocks.HANGING_GRANITE_SIGN)
-                .add(ModBlocks.HANGING_WALL_GRANITE_SIGN);
+                .add(ModBlocks.HANGING_WALL_GRANITE_SIGN)
+                .add(ModBlocks.POLISHED_GRANITE_SIGN)
+                .add(ModBlocks.WALL_POLISHED_GRANITE_SIGN)
+                .add(ModBlocks.HANGING_POLISHED_GRANITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_POLISHED_GRANITE_SIGN)
+                .add(ModBlocks.DIORITE_SIGN)
+                .add(ModBlocks.WALL_DIORITE_SIGN)
+                .add(ModBlocks.HANGING_DIORITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_DIORITE_SIGN)
+                .add(ModBlocks.POLISHED_DIORITE_SIGN)
+                .add(ModBlocks.WALL_POLISHED_DIORITE_SIGN)
+                .add(ModBlocks.HANGING_POLISHED_DIORITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_POLISHED_DIORITE_SIGN)
+                .add(ModBlocks.ANDESITE_SIGN)
+                .add(ModBlocks.WALL_ANDESITE_SIGN)
+                .add(ModBlocks.HANGING_ANDESITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_ANDESITE_SIGN)
+                .add(ModBlocks.POLISHED_ANDESITE_SIGN)
+                .add(ModBlocks.WALL_POLISHED_ANDESITE_SIGN)
+                .add(ModBlocks.HANGING_POLISHED_ANDESITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_POLISHED_ANDESITE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.SIGNS)
                 .add(ModBlocks.STONE_SIGN)
@@ -58,7 +78,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STONE_BRICKS_SIGN)
                 .add(ModBlocks.CRACKED_STONE_BRICKS_SIGN)
                 .add(ModBlocks.MOSSY_STONE_BRICKS_SIGN)
-                .add(ModBlocks.GRANITE_SIGN);
+                .add(ModBlocks.GRANITE_SIGN)
+                .add(ModBlocks.POLISHED_GRANITE_SIGN)
+                .add(ModBlocks.DIORITE_SIGN)
+                .add(ModBlocks.POLISHED_DIORITE_SIGN)
+                .add(ModBlocks.ANDESITE_SIGN)
+                .add(ModBlocks.POLISHED_ANDESITE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
                 .add(ModBlocks.WALL_STONE_SIGN)
@@ -68,7 +93,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WALL_STONE_BRICKS_SIGN)
                 .add(ModBlocks.WALL_CRACKED_STONE_BRICKS_SIGN)
                 .add(ModBlocks.WALL_MOSSY_STONE_BRICKS_SIGN)
-                .add(ModBlocks.WALL_GRANITE_SIGN);
+                .add(ModBlocks.WALL_GRANITE_SIGN)
+                .add(ModBlocks.WALL_POLISHED_GRANITE_SIGN)
+                .add(ModBlocks.WALL_DIORITE_SIGN)
+                .add(ModBlocks.WALL_POLISHED_DIORITE_SIGN)
+                .add(ModBlocks.WALL_ANDESITE_SIGN)
+                .add(ModBlocks.WALL_POLISHED_ANDESITE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
                 .add(ModBlocks.HANGING_WALL_STONE_SIGN)
@@ -78,7 +108,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.HANGING_WALL_STONE_BRICKS_SIGN)
                 .add(ModBlocks.HANGING_WALL_CRACKED_STONE_BRICKS_SIGN)
                 .add(ModBlocks.HANGING_WALL_MOSSY_STONE_BRICKS_SIGN)
-                .add(ModBlocks.HANGING_WALL_GRANITE_SIGN);
+                .add(ModBlocks.HANGING_WALL_GRANITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_POLISHED_GRANITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_DIORITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_POLISHED_DIORITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_ANDESITE_SIGN)
+                .add(ModBlocks.HANGING_WALL_POLISHED_ANDESITE_SIGN);
 
         getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
                 .add(ModBlocks.HANGING_STONE_SIGN)
@@ -88,6 +123,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.HANGING_STONE_BRICKS_SIGN)
                 .add(ModBlocks.HANGING_CRACKED_STONE_BRICKS_SIGN)
                 .add(ModBlocks.HANGING_MOSSY_STONE_BRICKS_SIGN)
-                .add(ModBlocks.HANGING_GRANITE_SIGN);
+                .add(ModBlocks.HANGING_GRANITE_SIGN)
+                .add(ModBlocks.HANGING_POLISHED_GRANITE_SIGN)
+                .add(ModBlocks.HANGING_DIORITE_SIGN)
+                .add(ModBlocks.HANGING_POLISHED_DIORITE_SIGN)
+                .add(ModBlocks.HANGING_ANDESITE_SIGN)
+                .add(ModBlocks.HANGING_POLISHED_ANDESITE_SIGN);
     }
 }
