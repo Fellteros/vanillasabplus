@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "#": {
+      "item": "minecraft:polished_deepslate"
+    }
+  },
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillasabplus:polished_deepslate_boat"
+  }
+}
