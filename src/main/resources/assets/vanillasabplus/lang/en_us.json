@@ -69,6 +69,26 @@
   "item.vanillasabplus.polished_andesite_chest_boat": "Polished Andesite Chest Boat",
   "block.vanillasabplus.polished_andesite_sign": "Polished Andesite Sign",
   "block.vanillasabplus.polished_andesite_hanging_sign": "Polished Andesite Hanging Sign",
+  
+  "item.vanillasabplus.deepslate_boat": "Deepslate Boat",
+  "item.vanillasabplus.deepslate_chest_boat": "Deepslate Chest Boat",
+  "block.vanillasabplus.deepslate_sign": "Deepslate Sign",
+  "block.vanillasabplus.deepslate_hanging_sign": "Deepslate Hanging Sign",
+  
+  "item.vanillasabplus.cobbled_deepslate_boat": "Cobbled Deepslate Boat",
+  "item.vanillasabplus.cobbled_deepslate_chest_boat": "Cobbled Deepslate Chest Boat",
+  "block.vanillasabplus.cobbled_deepslate_sign": "Cobbled Deepslate Sign",
+  "block.vanillasabplus.cobbled_deepslate_hanging_sign": "Cobbled Deepslate Hanging Sign",
+  
+  "item.vanillasabplus.chiseled_deepslate_boat": "Chiseled Deepslate Boat",
+  "item.vanillasabplus.chiseled_deepslate_chest_boat": "Chiseled Deepslate Chest Boat",
+  "block.vanillasabplus.chiseled_deepslate_sign": "Chiseled Deepslate Sign",
+  "block.vanillasabplus.chiseled_deepslate_hanging_sign": "Chiseled Deepslate Hanging Sign",
+  
+  "item.vanillasabplus.polished_deepslate_boat": "Polished Deepslate Boat",
+  "item.vanillasabplus.polished_deepslate_chest_boat": "Polished Deepslate Chest Boat",
+  "block.vanillasabplus.polished_deepslate_sign": "Polished Deepslate Sign",
+  "block.vanillasabplus.polished_deepslate_hanging_sign": "Polished Deepslate Hanging Sign",
 
   "itemgroup.vsabp_boat": "Vanilla+ Boats",
   "itemgroup.vsabp_sign": "Vanilla+ Signs",

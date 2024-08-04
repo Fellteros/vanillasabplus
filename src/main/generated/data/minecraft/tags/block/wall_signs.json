@@ -12,6 +12,10 @@
     "vanillasabplus:diorite_wall_sign",
     "vanillasabplus:polished_diorite_wall_sign",
     "vanillasabplus:andesite_wall_sign",
-    "vanillasabplus:polished_andesite_wall_sign"
+    "vanillasabplus:polished_andesite_wall_sign",
+    "vanillasabplus:deepslate_wall_sign",
+    "vanillasabplus:cobbled_deepslate_wall_sign",
+    "vanillasabplus:chiseled_deepslate_wall_sign",
+    "vanillasabplus:polished_deepslate_wall_sign"
   ]
 }

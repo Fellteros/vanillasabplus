@@ -31,7 +31,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DIORITE_BOAT)
                 .add(ModItems.POLISHED_DIORITE_BOAT)
                 .add(ModItems.ANDESITE_BOAT)
-                .add(ModItems.POLISHED_ANDESITE_BOAT);
+                .add(ModItems.POLISHED_ANDESITE_BOAT)
+                .add(ModItems.DEEPSLATE_BOAT)
+                .add(ModItems.COBBLED_DEEPSLATE_BOAT)
+                .add(ModItems.CHISELED_DEEPSLATE_BOAT)
+                .add(ModItems.POLISHED_DEEPSLATE_BOAT);
 
 
         getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
@@ -49,6 +53,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DIORITE_CHEST_BOAT)
                 .add(ModItems.POLISHED_DIORITE_CHEST_BOAT)
                 .add(ModItems.ANDESITE_CHEST_BOAT)
-                .add(ModItems.POLISHED_ANDESITE_CHEST_BOAT);
+                .add(ModItems.POLISHED_ANDESITE_CHEST_BOAT)
+                .add(ModItems.DEEPSLATE_CHEST_BOAT)
+                .add(ModItems.COBBLED_DEEPSLATE_CHEST_BOAT)
+                .add(ModItems.CHISELED_DEEPSLATE_CHEST_BOAT)
+                .add(ModItems.POLISHED_DEEPSLATE_CHEST_BOAT);
     }
 }

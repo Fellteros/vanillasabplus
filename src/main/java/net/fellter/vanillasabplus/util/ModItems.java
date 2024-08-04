@@ -93,6 +93,30 @@ public class ModItems {
     public static final Item POLISHED_ANDESITE_SIGN = registerItem("polished_andesite_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.POLISHED_ANDESITE_SIGN, ModBlocks.WALL_POLISHED_ANDESITE_SIGN));
     public static final Item POLISHED_ANDESITE_HANGING_SIGN = registerItem("polished_andesite_hanging_sign", new HangingSignItem(ModBlocks.HANGING_POLISHED_ANDESITE_SIGN, ModBlocks.HANGING_WALL_POLISHED_ANDESITE_SIGN, new Item.Settings().maxCount(16)));
 
+    public static final Item DEEPSLATE_BOAT = registerBoatItem("deepslate_boat", BoatTypes.DEEPSLATE, false, new Item.Settings().maxCount(1));
+    public static final Item DEEPSLATE_CHEST_BOAT = registerBoatItem("deepslate_chest_boat", BoatTypes.DEEPSLATE, true, new Item.Settings().maxCount(1));
+    public static final Item DEEPSLATE_SIGN = registerItem("deepslate_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.DEEPSLATE_SIGN, ModBlocks.WALL_DEEPSLATE_SIGN));
+    public static final Item DEEPSLATE_HANGING_SIGN = registerItem("deepslate_hanging_sign", new HangingSignItem(ModBlocks.HANGING_DEEPSLATE_SIGN,
+            ModBlocks.HANGING_WALL_DEEPSLATE_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item COBBLED_DEEPSLATE_BOAT = registerBoatItem("cobbled_deepslate_boat", BoatTypes.COBBLED_DEEPSLATE, false, new Item.Settings().maxCount(1));
+    public static final Item COBBLED_DEEPSLATE_CHEST_BOAT = registerBoatItem("cobbled_deepslate_chest_boat", BoatTypes.COBBLED_DEEPSLATE, true, new Item.Settings().maxCount(1));
+    public static final Item COBBLED_DEEPSLATE_SIGN = registerItem("cobbled_deepslate_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.COBBLED_DEEPSLATE_SIGN, ModBlocks.WALL_COBBLED_DEEPSLATE_SIGN));
+    public static final Item COBBLED_DEEPSLATE_HANGING_SIGN = registerItem("cobbled_deepslate_hanging_sign", new HangingSignItem(ModBlocks.HANGING_COBBLED_DEEPSLATE_SIGN,
+            ModBlocks.HANGING_WALL_COBBLED_DEEPSLATE_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item CHISELED_DEEPSLATE_BOAT = registerBoatItem("chiseled_deepslate_boat", BoatTypes.CHISELED_DEEPSLATE, false, new Item.Settings().maxCount(1));
+    public static final Item CHISELED_DEEPSLATE_CHEST_BOAT = registerBoatItem("chiseled_deepslate_chest_boat", BoatTypes.CHISELED_DEEPSLATE, true, new Item.Settings().maxCount(1));
+    public static final Item CHISELED_DEEPSLATE_SIGN = registerItem("chiseled_deepslate_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.CHISELED_DEEPSLATE_SIGN, ModBlocks.WALL_CHISELED_DEEPSLATE_SIGN));
+    public static final Item CHISELED_DEEPSLATE_HANGING_SIGN = registerItem("chiseled_deepslate_hanging_sign", new HangingSignItem(ModBlocks.HANGING_CHISELED_DEEPSLATE_SIGN,
+            ModBlocks.HANGING_WALL_CHISELED_DEEPSLATE_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item POLISHED_DEEPSLATE_BOAT = registerBoatItem("polished_deepslate_boat", BoatTypes.POLISHED_DEEPSLATE, false, new Item.Settings().maxCount(1));
+    public static final Item POLISHED_DEEPSLATE_CHEST_BOAT = registerBoatItem("polished_deepslate_chest_boat", BoatTypes.POLISHED_DEEPSLATE, true, new Item.Settings().maxCount(1));
+    public static final Item POLISHED_DEEPSLATE_SIGN = registerItem("polished_deepslate_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.POLISHED_DEEPSLATE_SIGN, ModBlocks.WALL_POLISHED_DEEPSLATE_SIGN));
+    public static final Item POLISHED_DEEPSLATE_HANGING_SIGN = registerItem("polished_deepslate_hanging_sign", new HangingSignItem(ModBlocks.HANGING_POLISHED_DEEPSLATE_SIGN,
+            ModBlocks.HANGING_WALL_POLISHED_DEEPSLATE_SIGN, new Item.Settings().maxCount(16)));
+
 
 
     private static Item registerItem(String name, Item item) {

@@ -56,6 +56,18 @@ public class BoatTypes {
     
     public static final Identifier POLISHED_ANDESITE_ID = createBoatIdentifier("polished_andesite");
     public static final RegistryKey<ModBoatType> POLISHED_ANDESITE = registerBoatRegistryKey(POLISHED_ANDESITE_ID);
+    
+    public static final Identifier DEEPSLATE_ID = createBoatIdentifier("deepslate");
+    public static final RegistryKey<ModBoatType> DEEPSLATE = registerBoatRegistryKey(DEEPSLATE_ID);
+    
+    public static final Identifier COBBLED_DEEPSLATE_ID = createBoatIdentifier("cobbled_deepslate");
+    public static final RegistryKey<ModBoatType> COBBLED_DEEPSLATE = registerBoatRegistryKey(COBBLED_DEEPSLATE_ID);
+    
+    public static final Identifier CHISELED_DEEPSLATE_ID = createBoatIdentifier("chiseled_deepslate");
+    public static final RegistryKey<ModBoatType> CHISELED_DEEPSLATE = registerBoatRegistryKey(CHISELED_DEEPSLATE_ID);
+
+    public static final Identifier POLISHED_DEEPSLATE_ID = createBoatIdentifier("polished_deepslate");
+    public static final RegistryKey<ModBoatType> POLISHED_DEEPSLATE = registerBoatRegistryKey(POLISHED_DEEPSLATE_ID);
 
 
     public static void registerBoatTypes() {
@@ -74,6 +86,10 @@ public class BoatTypes {
         registerBoatType(POLISHED_DIORITE_ID, ModItems.POLISHED_DIORITE_BOAT, ModItems.POLISHED_DIORITE_CHEST_BOAT, Blocks.POLISHED_DIORITE.asItem());
         registerBoatType(ANDESITE_ID, ModItems.ANDESITE_BOAT, ModItems.ANDESITE_CHEST_BOAT, Blocks.ANDESITE.asItem());
         registerBoatType(POLISHED_ANDESITE_ID, ModItems.POLISHED_ANDESITE_BOAT, ModItems.POLISHED_ANDESITE_CHEST_BOAT, Blocks.POLISHED_ANDESITE.asItem());
+        registerBoatType(DEEPSLATE_ID, ModItems.DEEPSLATE_BOAT, ModItems.DEEPSLATE_CHEST_BOAT, Blocks.DEEPSLATE.asItem());
+        registerBoatType(COBBLED_DEEPSLATE_ID, ModItems.COBBLED_DEEPSLATE_BOAT, ModItems.COBBLED_DEEPSLATE_CHEST_BOAT, Blocks.COBBLED_DEEPSLATE.asItem());
+        registerBoatType(CHISELED_DEEPSLATE_ID, ModItems.CHISELED_DEEPSLATE_BOAT, ModItems.CHISELED_DEEPSLATE_CHEST_BOAT, Blocks.CHISELED_DEEPSLATE.asItem());
+        registerBoatType(POLISHED_DEEPSLATE_ID, ModItems.POLISHED_DEEPSLATE_BOAT, ModItems.POLISHED_DEEPSLATE_CHEST_BOAT, Blocks.POLISHED_DEEPSLATE.asItem());
     }
 
 
@@ -93,6 +109,10 @@ public class BoatTypes {
         ModBoatClient.registerModelLayers(BoatTypes.POLISHED_DIORITE_ID, false);
         ModBoatClient.registerModelLayers(BoatTypes.ANDESITE_ID, false);
         ModBoatClient.registerModelLayers(BoatTypes.POLISHED_ANDESITE_ID, false);
+        ModBoatClient.registerModelLayers(BoatTypes.DEEPSLATE_ID, false);
+        ModBoatClient.registerModelLayers(BoatTypes.COBBLED_DEEPSLATE_ID, false);
+        ModBoatClient.registerModelLayers(BoatTypes.CHISELED_DEEPSLATE_ID, false);
+        ModBoatClient.registerModelLayers(BoatTypes.POLISHED_DEEPSLATE_ID, false);
     }
 
 

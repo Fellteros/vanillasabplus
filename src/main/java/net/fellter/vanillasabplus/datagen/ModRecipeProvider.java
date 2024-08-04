@@ -4,13 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fellter.vanillasabplus.util.ModItems;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -94,6 +92,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_ANDESITE_CHEST_BOAT, Blocks.POLISHED_ANDESITE);
         RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_ANDESITE_HANGING_SIGN, Blocks.POLISHED_ANDESITE);
         ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_ANDESITE_SIGN, Blocks.POLISHED_ANDESITE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.DEEPSLATE_BOAT, Blocks.DEEPSLATE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.DEEPSLATE_CHEST_BOAT, Blocks.DEEPSLATE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.DEEPSLATE_HANGING_SIGN, Blocks.DEEPSLATE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.DEEPSLATE_SIGN, Blocks.DEEPSLATE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.COBBLED_DEEPSLATE_BOAT, Blocks.COBBLED_DEEPSLATE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.COBBLED_DEEPSLATE_CHEST_BOAT, Blocks.COBBLED_DEEPSLATE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.COBBLED_DEEPSLATE_HANGING_SIGN, Blocks.COBBLED_DEEPSLATE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.COBBLED_DEEPSLATE_SIGN, Blocks.COBBLED_DEEPSLATE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.CHISELED_DEEPSLATE_BOAT, Blocks.CHISELED_DEEPSLATE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.CHISELED_DEEPSLATE_CHEST_BOAT, Blocks.CHISELED_DEEPSLATE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.CHISELED_DEEPSLATE_HANGING_SIGN, Blocks.CHISELED_DEEPSLATE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.CHISELED_DEEPSLATE_SIGN, Blocks.CHISELED_DEEPSLATE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.POLISHED_DEEPSLATE_BOAT, Blocks.POLISHED_DEEPSLATE);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_DEEPSLATE_CHEST_BOAT, Blocks.POLISHED_DEEPSLATE);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_DEEPSLATE_HANGING_SIGN, Blocks.POLISHED_DEEPSLATE);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_DEEPSLATE_SIGN, Blocks.POLISHED_DEEPSLATE);
     }
 
     public static void offerSignRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {

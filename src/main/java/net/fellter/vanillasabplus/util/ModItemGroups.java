@@ -60,6 +60,18 @@ public class ModItemGroups {
                         entries.add(ModItems.POLISHED_ANDESITE_BOAT);
                         entries.add(ModItems.POLISHED_ANDESITE_CHEST_BOAT);
 
+                        entries.add(ModItems.DEEPSLATE_BOAT);
+                        entries.add(ModItems.DEEPSLATE_CHEST_BOAT);
+
+                        entries.add(ModItems.COBBLED_DEEPSLATE_BOAT);
+                        entries.add(ModItems.COBBLED_DEEPSLATE_CHEST_BOAT);
+
+                        entries.add(ModItems.CHISELED_DEEPSLATE_BOAT);
+                        entries.add(ModItems.CHISELED_DEEPSLATE_CHEST_BOAT);
+
+                        entries.add(ModItems.POLISHED_DEEPSLATE_BOAT);
+                        entries.add(ModItems.POLISHED_DEEPSLATE_CHEST_BOAT);
+
             })).build());
 
     public static final ItemGroup VSABP_SIGN_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -105,6 +117,18 @@ public class ModItemGroups {
 
                         entries.add(ModItems.POLISHED_ANDESITE_SIGN);
                         entries.add(ModItems.POLISHED_ANDESITE_HANGING_SIGN);
+
+                        entries.add(ModItems.DEEPSLATE_SIGN);
+                        entries.add(ModItems.DEEPSLATE_HANGING_SIGN);
+
+                        entries.add(ModItems.COBBLED_DEEPSLATE_SIGN);
+                        entries.add(ModItems.COBBLED_DEEPSLATE_HANGING_SIGN);
+
+                        entries.add(ModItems.CHISELED_DEEPSLATE_SIGN);
+                        entries.add(ModItems.CHISELED_DEEPSLATE_HANGING_SIGN);
+
+                        entries.add(ModItems.POLISHED_DEEPSLATE_SIGN);
+                        entries.add(ModItems.POLISHED_DEEPSLATE_HANGING_SIGN);
 
             })).build());
 

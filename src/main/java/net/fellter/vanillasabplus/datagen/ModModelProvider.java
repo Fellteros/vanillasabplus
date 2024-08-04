@@ -57,6 +57,18 @@ public class ModModelProvider extends FabricModelProvider {
 
         registerSign(bsmg, Blocks.POLISHED_ANDESITE, POLISHED_ANDESITE_SIGN, WALL_POLISHED_ANDESITE_SIGN);
         bsmg.registerHangingSign(Blocks.POLISHED_ANDESITE, HANGING_POLISHED_ANDESITE_SIGN, HANGING_WALL_POLISHED_ANDESITE_SIGN);
+
+        registerSign(bsmg, Blocks.DEEPSLATE, DEEPSLATE_SIGN, WALL_DEEPSLATE_SIGN);
+        bsmg.registerHangingSign(Blocks.DEEPSLATE, HANGING_DEEPSLATE_SIGN, HANGING_WALL_DEEPSLATE_SIGN);
+
+        registerSign(bsmg, Blocks.COBBLED_DEEPSLATE, COBBLED_DEEPSLATE_SIGN, WALL_COBBLED_DEEPSLATE_SIGN);
+        bsmg.registerHangingSign(Blocks.COBBLED_DEEPSLATE, HANGING_COBBLED_DEEPSLATE_SIGN, HANGING_WALL_COBBLED_DEEPSLATE_SIGN);
+
+        registerSign(bsmg, Blocks.CHISELED_DEEPSLATE, CHISELED_DEEPSLATE_SIGN, WALL_CHISELED_DEEPSLATE_SIGN);
+        bsmg.registerHangingSign(Blocks.CHISELED_DEEPSLATE, HANGING_CHISELED_DEEPSLATE_SIGN, HANGING_WALL_CHISELED_DEEPSLATE_SIGN);
+
+        registerSign(bsmg, Blocks.POLISHED_DEEPSLATE, POLISHED_DEEPSLATE_SIGN, WALL_POLISHED_DEEPSLATE_SIGN);
+        bsmg.registerHangingSign(Blocks.POLISHED_DEEPSLATE, HANGING_POLISHED_DEEPSLATE_SIGN, HANGING_WALL_POLISHED_DEEPSLATE_SIGN);
     }
 
     @Override
@@ -110,6 +122,18 @@ public class ModModelProvider extends FabricModelProvider {
         
         itemModelGenerator.register(ModItems.POLISHED_ANDESITE_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.POLISHED_ANDESITE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.DEEPSLATE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEEPSLATE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.COBBLED_DEEPSLATE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COBBLED_DEEPSLATE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.CHISELED_DEEPSLATE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHISELED_DEEPSLATE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.POLISHED_DEEPSLATE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POLISHED_DEEPSLATE_CHEST_BOAT, Models.GENERATED);
 
     }
 }

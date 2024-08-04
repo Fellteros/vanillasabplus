@@ -84,5 +84,25 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WALL_POLISHED_ANDESITE_SIGN);
         addDrop(ModBlocks.HANGING_POLISHED_ANDESITE_SIGN);
         addDrop(ModBlocks.HANGING_WALL_POLISHED_ANDESITE_SIGN);
+
+        addDrop(ModBlocks.DEEPSLATE_SIGN);
+        addDrop(ModBlocks.WALL_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.HANGING_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_DEEPSLATE_SIGN);
+
+        addDrop(ModBlocks.COBBLED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.WALL_COBBLED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.HANGING_COBBLED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_COBBLED_DEEPSLATE_SIGN);
+
+        addDrop(ModBlocks.CHISELED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.WALL_CHISELED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.HANGING_CHISELED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_CHISELED_DEEPSLATE_SIGN);
+
+        addDrop(ModBlocks.POLISHED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.WALL_POLISHED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.HANGING_POLISHED_DEEPSLATE_SIGN);
+        addDrop(ModBlocks.HANGING_WALL_POLISHED_DEEPSLATE_SIGN);
     }
 }

@@ -1,6 +1,6 @@
-// 1.21	2024-07-24T20:11:26.6714139	vanillasabplus/Tags for minecraft:block
-aa85d90fb0b816495aa50d8382b3c522058954a3 data\minecraft\tags\block\signs.json
-405a36281f25af0019da3b595ce01b2dd9c3fe99 data\minecraft\tags\block\mineable\pickaxe.json
-afca452f65f771f1719a6e9f8ad9cf7ce6b55c7e data\minecraft\tags\block\wall_hanging_signs.json
-b3156504039dc0dd92d6d9c52418c2068babdfb4 data\minecraft\tags\block\ceiling_hanging_signs.json
-50de2ba73b7e8fffecafcf439aa2c338120cd149 data\minecraft\tags\block\wall_signs.json
+// 1.21	2024-08-04T14:31:37.2762397	vanillasabplus/Tags for minecraft:block
+7df5993cc68765fa318014b5830b4b45ee4a6c10 data\minecraft\tags\block\signs.json
+0330016e15a55d2fedccf74ddf9460f8bfc329d4 data\minecraft\tags\block\mineable\pickaxe.json
+5ac3c887df2b33b6f6e73d9215d732bfc4d79301 data\minecraft\tags\block\wall_hanging_signs.json
+c5b712c7ad6f7fe5af2d74e49ad23750be494105 data\minecraft\tags\block\ceiling_hanging_signs.json
+4fd88114c38292d7a92efa745f8e6c44f30532e7 data\minecraft\tags\block\wall_signs.json

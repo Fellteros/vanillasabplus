@@ -77,9 +77,44 @@ public class ModBlocks {
     public static final Block HANGING_WALL_ANDESITE_SIGN = createWallHangingSignBlock("andesite_wall_hanging_sign", "andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.ANDESITE).dropsLike(HANGING_ANDESITE_SIGN));
     
     public static final Block POLISHED_ANDESITE_SIGN = createSignBlock("polished_andesite_sign", "polished_andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE));
-    public static final Block WALL_POLISHED_ANDESITE_SIGN = createWallSignBlock("polished_andesite_wall_sign", "polished_andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE).dropsLike(POLISHED_ANDESITE_SIGN));
+    public static final Block WALL_POLISHED_ANDESITE_SIGN = createWallSignBlock("polished_andesite_wall_sign", "polished_andesite", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE).dropsLike(POLISHED_ANDESITE_SIGN));
     public static final Block HANGING_POLISHED_ANDESITE_SIGN = createHangingSignBlock("polished_andesite_hanging_sign", "polished_andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE));
     public static final Block HANGING_WALL_POLISHED_ANDESITE_SIGN = createWallHangingSignBlock("polished_andesite_wall_hanging_sign", "polished_andesite", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE).dropsLike(HANGING_POLISHED_ANDESITE_SIGN));
+    
+    public static final Block DEEPSLATE_SIGN = createSignBlock("deepslate_sign", "deepslate", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.DEEPSLATE));
+    public static final Block WALL_DEEPSLATE_SIGN = createWallSignBlock("deepslate_wall_sign", "deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.DEEPSLATE).dropsLike(DEEPSLATE_SIGN));
+    public static final Block HANGING_DEEPSLATE_SIGN = createHangingSignBlock("deepslate_hanging_sign", "deepslate", WoodType.OAK, AbstractBlock.Settings.copy(Blocks.DEEPSLATE));
+    public static final Block HANGING_WALL_DEEPSLATE_SIGN = createWallHangingSignBlock("deepslate_wall_hanging_sign", "deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.DEEPSLATE).dropsLike(HANGING_DEEPSLATE_SIGN));
+    
+    public static final Block COBBLED_DEEPSLATE_SIGN = createSignBlock("cobbled_deepslate_sign", "cobbled_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE));
+    public static final Block WALL_COBBLED_DEEPSLATE_SIGN = createWallSignBlock("cobbled_deepslate_wall_sign", "cobbled_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE).dropsLike(COBBLED_DEEPSLATE_SIGN));
+    public static final Block HANGING_COBBLED_DEEPSLATE_SIGN = createHangingSignBlock("cobbled_deepslate_hanging_sign", "cobbled_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE));
+    public static final Block HANGING_WALL_COBBLED_DEEPSLATE_SIGN = createWallHangingSignBlock("cobbled_deepslate_wall_hanging_sign", "cobbled_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE).dropsLike(HANGING_COBBLED_DEEPSLATE_SIGN));
+    
+    public static final Block CHISELED_DEEPSLATE_SIGN = createSignBlock("chiseled_deepslate_sign", "chiseled_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.CHISELED_DEEPSLATE));
+    public static final Block WALL_CHISELED_DEEPSLATE_SIGN = createWallSignBlock("chiseled_deepslate_wall_sign", "chiseled_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.CHISELED_DEEPSLATE).dropsLike(CHISELED_DEEPSLATE_SIGN));
+    public static final Block HANGING_CHISELED_DEEPSLATE_SIGN = createHangingSignBlock("chiseled_deepslate_hanging_sign", "chiseled_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.CHISELED_DEEPSLATE));
+    public static final Block HANGING_WALL_CHISELED_DEEPSLATE_SIGN = createWallHangingSignBlock("chiseled_deepslate_wall_hanging_sign", "chiseled_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.CHISELED_DEEPSLATE).dropsLike(HANGING_CHISELED_DEEPSLATE_SIGN));
+    
+    public static final Block POLISHED_DEEPSLATE_SIGN = createSignBlock("polished_deepslate_sign", "polished_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE));
+    public static final Block WALL_POLISHED_DEEPSLATE_SIGN = createWallSignBlock("polished_deepslate_wall_sign", "polished_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE).dropsLike(POLISHED_DEEPSLATE_SIGN));
+    public static final Block HANGING_POLISHED_DEEPSLATE_SIGN = createHangingSignBlock("polished_deepslate_hanging_sign", "polished_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE));
+    public static final Block HANGING_WALL_POLISHED_DEEPSLATE_SIGN = createWallHangingSignBlock("polished_deepslate_wall_hanging_sign", "polished_deepslate", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE).dropsLike(HANGING_POLISHED_DEEPSLATE_SIGN));
 
 
 
