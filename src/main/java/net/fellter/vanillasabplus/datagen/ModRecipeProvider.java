@@ -112,6 +112,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_DEEPSLATE_CHEST_BOAT, Blocks.POLISHED_DEEPSLATE);
         RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_DEEPSLATE_HANGING_SIGN, Blocks.POLISHED_DEEPSLATE);
         ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_DEEPSLATE_SIGN, Blocks.POLISHED_DEEPSLATE);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.DEEPSLATE_BRICKS_BOAT, Blocks.DEEPSLATE_BRICKS);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.DEEPSLATE_BRICKS_CHEST_BOAT, Blocks.DEEPSLATE_BRICKS);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.DEEPSLATE_BRICKS_HANGING_SIGN, Blocks.DEEPSLATE_BRICKS);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.DEEPSLATE_BRICKS_SIGN, Blocks.DEEPSLATE_BRICKS);
+
+        RecipeProvider.offerBoatRecipe(exporter, ModItems.CRACKED_DEEPSLATE_BRICKS_BOAT, Blocks.CRACKED_DEEPSLATE_BRICKS);
+        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT, Blocks.CRACKED_DEEPSLATE_BRICKS);
+        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.CRACKED_DEEPSLATE_BRICKS_HANGING_SIGN, Blocks.CRACKED_DEEPSLATE_BRICKS);
+        ModRecipeProvider.offerSignRecipe(exporter, ModItems.CRACKED_DEEPSLATE_BRICKS_SIGN, Blocks.CRACKED_DEEPSLATE_BRICKS);
     }
 
     public static void offerSignRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {

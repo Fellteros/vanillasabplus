@@ -115,6 +115,24 @@ public class ModBlocks {
             AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE));
     public static final Block HANGING_WALL_POLISHED_DEEPSLATE_SIGN = createWallHangingSignBlock("polished_deepslate_wall_hanging_sign", "polished_deepslate", WoodType.OAK,
             AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE).dropsLike(HANGING_POLISHED_DEEPSLATE_SIGN));
+    
+    public static final Block DEEPSLATE_BRICKS_SIGN = createSignBlock("deepslate_bricks_sign", "deepslate_bricks", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS));
+    public static final Block WALL_DEEPSLATE_BRICKS_SIGN = createWallSignBlock("deepslate_bricks_wall_sign", "deepslate_bricks", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS).dropsLike(DEEPSLATE_BRICKS_SIGN));
+    public static final Block HANGING_DEEPSLATE_BRICKS_SIGN = createHangingSignBlock("deepslate_bricks_hanging_sign", "deepslate_bricks", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS));
+    public static final Block HANGING_WALL_DEEPSLATE_BRICKS_SIGN = createWallHangingSignBlock("deepslate_bricks_wall_hanging_sign", "deepslate_bricks", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS).dropsLike(HANGING_DEEPSLATE_BRICKS_SIGN));
+    
+    public static final Block CRACKED_DEEPSLATE_BRICKS_SIGN = createSignBlock("cracked_deepslate_bricks_sign", "cracked_deepslate_bricks", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.CRACKED_DEEPSLATE_BRICKS));
+    public static final Block WALL_CRACKED_DEEPSLATE_BRICKS_SIGN = createWallSignBlock("cracked_deepslate_bricks_wall_sign", "cracked_deepslate_bricks", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.CRACKED_DEEPSLATE_BRICKS).dropsLike(CRACKED_DEEPSLATE_BRICKS_SIGN));
+    public static final Block HANGING_CRACKED_DEEPSLATE_BRICKS_SIGN = createHangingSignBlock("cracked_deepslate_bricks_hanging_sign", "cracked_deepslate_bricks", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.CRACKED_DEEPSLATE_BRICKS));
+    public static final Block HANGING_WALL_CRACKED_DEEPSLATE_BRICKS_SIGN = createWallHangingSignBlock("cracked_deepslate_bricks_wall_hanging_sign", "cracked_deepslate_bricks", WoodType.OAK,
+            AbstractBlock.Settings.copy(Blocks.CRACKED_DEEPSLATE_BRICKS).dropsLike(HANGING_CRACKED_DEEPSLATE_BRICKS_SIGN));
 
 
 

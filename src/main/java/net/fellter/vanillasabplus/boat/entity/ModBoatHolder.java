@@ -13,7 +13,7 @@ public interface ModBoatHolder {
 
     void setModBoat(ModBoatType boat);
 
-    default boolean hasValidTerraformBoat() {
+    default boolean hasValidModBoat() {
         return this.getModBoat() != null;
     }
 

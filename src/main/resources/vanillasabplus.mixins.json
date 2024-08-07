@@ -16,6 +16,7 @@
     "HangingSignBlockEntityRendererMixin",
     "HangingSignEditScreenMixin",
     "SignBlockEntityRendererMixin",
-    "SignEditScreenMixin"
+    "SignEditScreenMixin",
+    "MixinHandledScreen"
   ]
 }

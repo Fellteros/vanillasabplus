@@ -60,12 +60,12 @@ public class ModBoatEntity extends BoatEntity implements ModBoatHolder {
 
     @Override
     public boolean shouldRender(double cameraX, double cameraY, double cameraZ) {
-        return this.hasValidTerraformBoat() && super.shouldRender(cameraX, cameraY, cameraZ);
+        return this.hasValidModBoat() && super.shouldRender(cameraX, cameraY, cameraZ);
     }
 
     @Override
     public void tick() {
-        if (this.hasValidTerraformBoat()) {
+        if (this.hasValidModBoat()) {
             super.tick();
         } else {
             this.discard();
@@ -74,7 +74,6 @@ public class ModBoatEntity extends BoatEntity implements ModBoatHolder {
 
     @Override
     public void setVariant(BoatEntity.Type type) {
-        return;
     }
 
     @Override
@@ -94,7 +93,7 @@ public class ModBoatEntity extends BoatEntity implements ModBoatHolder {
         super.readCustomDataFromNbt(nbt);
         this.readModBoatFromNbt(nbt);
 
-        if (!this.hasValidTerraformBoat()) {
+        if (!this.hasValidModBoat()) {
             this.discard();
         }
     }

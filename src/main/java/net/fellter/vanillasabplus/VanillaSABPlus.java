@@ -41,5 +41,6 @@ public class VanillaSABPlus implements ModInitializer {
 		ModBoatTrackedData.register();
 		Registry.register(Registries.ENTITY_TYPE, BOAT_ID, BOAT);
 		Registry.register(Registries.ENTITY_TYPE, CHEST_BOAT_ID, CHEST_BOAT);
+
 	}
 }

@@ -69,6 +69,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         registerSign(bsmg, Blocks.POLISHED_DEEPSLATE, POLISHED_DEEPSLATE_SIGN, WALL_POLISHED_DEEPSLATE_SIGN);
         bsmg.registerHangingSign(Blocks.POLISHED_DEEPSLATE, HANGING_POLISHED_DEEPSLATE_SIGN, HANGING_WALL_POLISHED_DEEPSLATE_SIGN);
+
+        registerSign(bsmg, Blocks.DEEPSLATE_BRICKS, DEEPSLATE_BRICKS_SIGN, WALL_DEEPSLATE_BRICKS_SIGN);
+        bsmg.registerHangingSign(Blocks.DEEPSLATE_BRICKS, HANGING_DEEPSLATE_BRICKS_SIGN, HANGING_WALL_DEEPSLATE_BRICKS_SIGN);
+
+        registerSign(bsmg, Blocks.CRACKED_DEEPSLATE_BRICKS, CRACKED_DEEPSLATE_BRICKS_SIGN, WALL_CRACKED_DEEPSLATE_BRICKS_SIGN);
+        bsmg.registerHangingSign(Blocks.CRACKED_DEEPSLATE_BRICKS, HANGING_CRACKED_DEEPSLATE_BRICKS_SIGN, HANGING_WALL_CRACKED_DEEPSLATE_BRICKS_SIGN);
     }
 
     @Override
@@ -134,6 +140,12 @@ public class ModModelProvider extends FabricModelProvider {
         
         itemModelGenerator.register(ModItems.POLISHED_DEEPSLATE_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.POLISHED_DEEPSLATE_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.DEEPSLATE_BRICKS_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEEPSLATE_BRICKS_CHEST_BOAT, Models.GENERATED);
+        
+        itemModelGenerator.register(ModItems.CRACKED_DEEPSLATE_BRICKS_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT, Models.GENERATED);
 
     }
 }

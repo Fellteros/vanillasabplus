@@ -1,17 +1,21 @@
 package net.fellter.vanillasabplus.boat.entity;
 
 import net.fellter.vanillasabplus.VanillaSABPlus;
+import net.fellter.vanillasabplus.boat.ModScreen;
 import net.fellter.vanillasabplus.boat.util.ModBoatTrackedData;
 import net.fellter.vanillasabplus.boat.util.ModBoatType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.mob.PiglinBrain;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.vehicle.BoatEntity;
 import net.minecraft.entity.vehicle.ChestBoatEntity;
 import net.minecraft.item.Item;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
+import net.minecraft.world.event.GameEvent;
 
 import java.util.Optional;
 
@@ -61,12 +65,12 @@ public class ModChestBoatEntity extends ChestBoatEntity implements ModBoatHolder
 
     @Override
     public boolean shouldRender(double cameraX, double cameraY, double cameraZ) {
-        return this.hasValidTerraformBoat() && super.shouldRender(cameraX, cameraY, cameraZ);
+        return this.hasValidModBoat() && super.shouldRender(cameraX, cameraY, cameraZ);
     }
 
     @Override
     public void tick() {
-        if (this.hasValidTerraformBoat()) {
+        if (this.hasValidModBoat()) {
             super.tick();
         } else {
             this.discard();
@@ -74,9 +78,15 @@ public class ModChestBoatEntity extends ChestBoatEntity implements ModBoatHolder
     }
 
     @Override
-    public void setVariant(BoatEntity.Type type) {
-        return;
+    public void openInventory(PlayerEntity player) {
+        player.openHandledScreen(this);
+        if (!player.getWorld().isClient) {
+            this.emitGameEvent(GameEvent.CONTAINER_OPEN, player);
+            PiglinBrain.onGuardedBlockInteracted(player, true);
+        }
     }
+
+
 
     @Override
     public BoatEntity.Type getVariant() {
@@ -95,7 +105,7 @@ public class ModChestBoatEntity extends ChestBoatEntity implements ModBoatHolder
         super.readCustomDataFromNbt(nbt);
         this.readModBoatFromNbt(nbt);
 
-        if (!this.hasValidTerraformBoat()) {
+        if (!this.hasValidModBoat()) {
             this.discard();
         }
     }

@@ -117,6 +117,18 @@ public class ModItems {
     public static final Item POLISHED_DEEPSLATE_HANGING_SIGN = registerItem("polished_deepslate_hanging_sign", new HangingSignItem(ModBlocks.HANGING_POLISHED_DEEPSLATE_SIGN,
             ModBlocks.HANGING_WALL_POLISHED_DEEPSLATE_SIGN, new Item.Settings().maxCount(16)));
 
+    public static final Item DEEPSLATE_BRICKS_BOAT = registerBoatItem("deepslate_bricks_boat", BoatTypes.DEEPSLATE_BRICKS, false, new Item.Settings().maxCount(1));
+    public static final Item DEEPSLATE_BRICKS_CHEST_BOAT = registerBoatItem("deepslate_bricks_chest_boat", BoatTypes.DEEPSLATE_BRICKS, true, new Item.Settings().maxCount(1));
+    public static final Item DEEPSLATE_BRICKS_SIGN = registerItem("deepslate_bricks_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.DEEPSLATE_BRICKS_SIGN, ModBlocks.WALL_DEEPSLATE_BRICKS_SIGN));
+    public static final Item DEEPSLATE_BRICKS_HANGING_SIGN = registerItem("deepslate_bricks_hanging_sign", new HangingSignItem(ModBlocks.HANGING_DEEPSLATE_BRICKS_SIGN,
+            ModBlocks.HANGING_WALL_DEEPSLATE_BRICKS_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item CRACKED_DEEPSLATE_BRICKS_BOAT = registerBoatItem("cracked_deepslate_bricks_boat", BoatTypes.CRACKED_DEEPSLATE_BRICKS, false, new Item.Settings().maxCount(1));
+    public static final Item CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT = registerBoatItem("cracked_deepslate_bricks_chest_boat", BoatTypes.CRACKED_DEEPSLATE_BRICKS, true, new Item.Settings().maxCount(1));
+    public static final Item CRACKED_DEEPSLATE_BRICKS_SIGN = registerItem("cracked_deepslate_bricks_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.CRACKED_DEEPSLATE_BRICKS_SIGN, ModBlocks.WALL_CRACKED_DEEPSLATE_BRICKS_SIGN));
+    public static final Item CRACKED_DEEPSLATE_BRICKS_HANGING_SIGN = registerItem("cracked_deepslate_bricks_hanging_sign", new HangingSignItem(ModBlocks.HANGING_CRACKED_DEEPSLATE_BRICKS_SIGN,
+            ModBlocks.HANGING_WALL_CRACKED_DEEPSLATE_BRICKS_SIGN, new Item.Settings().maxCount(16)));
+
 
 
     private static Item registerItem(String name, Item item) {

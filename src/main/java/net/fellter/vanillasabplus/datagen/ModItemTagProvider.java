@@ -35,7 +35,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DEEPSLATE_BOAT)
                 .add(ModItems.COBBLED_DEEPSLATE_BOAT)
                 .add(ModItems.CHISELED_DEEPSLATE_BOAT)
-                .add(ModItems.POLISHED_DEEPSLATE_BOAT);
+                .add(ModItems.POLISHED_DEEPSLATE_BOAT)
+                .add(ModItems.DEEPSLATE_BRICKS_BOAT)
+                .add(ModItems.CRACKED_DEEPSLATE_BRICKS_BOAT)
+        ;
 
 
         getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
@@ -57,6 +60,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DEEPSLATE_CHEST_BOAT)
                 .add(ModItems.COBBLED_DEEPSLATE_CHEST_BOAT)
                 .add(ModItems.CHISELED_DEEPSLATE_CHEST_BOAT)
-                .add(ModItems.POLISHED_DEEPSLATE_CHEST_BOAT);
+                .add(ModItems.POLISHED_DEEPSLATE_CHEST_BOAT)
+                .add(ModItems.DEEPSLATE_BRICKS_CHEST_BOAT)
+                .add(ModItems.CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT)
+        ;
     }
 }

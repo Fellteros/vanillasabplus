@@ -89,6 +89,16 @@
   "item.vanillasabplus.polished_deepslate_chest_boat": "Polished Deepslate Chest Boat",
   "block.vanillasabplus.polished_deepslate_sign": "Polished Deepslate Sign",
   "block.vanillasabplus.polished_deepslate_hanging_sign": "Polished Deepslate Hanging Sign",
+  
+  "item.vanillasabplus.deepslate_bricks_boat": "Deepslate Brick Boat",
+  "item.vanillasabplus.deepslate_bricks_chest_boat": "Deepslate Brick Chest Boat",
+  "block.vanillasabplus.deepslate_bricks_sign": "Deepslate Brick Sign",
+  "block.vanillasabplus.deepslate_bricks_hanging_sign": "Deepslate Brick Hanging Sign",
+  
+  "item.vanillasabplus.cracked_deepslate_bricks_boat": "Cracked Deepslate Brick Boat",
+  "item.vanillasabplus.cracked_deepslate_bricks_chest_boat": "Cracked Deepslate Brick Chest Boat",
+  "block.vanillasabplus.cracked_deepslate_bricks_sign": "Cracked Deepslate Brick Sign",
+  "block.vanillasabplus.cracked_deepslate_bricks_hanging_sign": "Cracked Deepslate Brick Hanging Sign",
 
   "itemgroup.vsabp_boat": "Vanilla+ Boats",
   "itemgroup.vsabp_sign": "Vanilla+ Signs",

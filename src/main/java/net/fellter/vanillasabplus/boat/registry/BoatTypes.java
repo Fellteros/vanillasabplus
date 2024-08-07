@@ -69,6 +69,12 @@ public class BoatTypes {
     public static final Identifier POLISHED_DEEPSLATE_ID = createBoatIdentifier("polished_deepslate");
     public static final RegistryKey<ModBoatType> POLISHED_DEEPSLATE = registerBoatRegistryKey(POLISHED_DEEPSLATE_ID);
 
+    public static final Identifier DEEPSLATE_BRICKS_ID = createBoatIdentifier("deepslate_bricks");
+    public static final RegistryKey<ModBoatType> DEEPSLATE_BRICKS = registerBoatRegistryKey(DEEPSLATE_BRICKS_ID);
+
+    public static final Identifier CRACKED_DEEPSLATE_BRICKS_ID = createBoatIdentifier("cracked_deepslate_bricks");
+    public static final RegistryKey<ModBoatType> CRACKED_DEEPSLATE_BRICKS = registerBoatRegistryKey(CRACKED_DEEPSLATE_BRICKS_ID);
+
 
     public static void registerBoatTypes() {
         registerBoatType(CRIMSON_ID, ModItems.CRIMSON_BOAT, ModItems.CRIMSON_CHEST_BOAT, Blocks.CRIMSON_PLANKS.asItem());
@@ -90,6 +96,8 @@ public class BoatTypes {
         registerBoatType(COBBLED_DEEPSLATE_ID, ModItems.COBBLED_DEEPSLATE_BOAT, ModItems.COBBLED_DEEPSLATE_CHEST_BOAT, Blocks.COBBLED_DEEPSLATE.asItem());
         registerBoatType(CHISELED_DEEPSLATE_ID, ModItems.CHISELED_DEEPSLATE_BOAT, ModItems.CHISELED_DEEPSLATE_CHEST_BOAT, Blocks.CHISELED_DEEPSLATE.asItem());
         registerBoatType(POLISHED_DEEPSLATE_ID, ModItems.POLISHED_DEEPSLATE_BOAT, ModItems.POLISHED_DEEPSLATE_CHEST_BOAT, Blocks.POLISHED_DEEPSLATE.asItem());
+        registerBoatType(DEEPSLATE_BRICKS_ID, ModItems.DEEPSLATE_BRICKS_BOAT, ModItems.DEEPSLATE_BRICKS_CHEST_BOAT, Blocks.DEEPSLATE_BRICKS.asItem());
+        registerBoatType(CRACKED_DEEPSLATE_BRICKS_ID, ModItems.CRACKED_DEEPSLATE_BRICKS_BOAT, ModItems.CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT, Blocks.CRACKED_DEEPSLATE_BRICKS.asItem());
     }
 
 
@@ -113,6 +121,8 @@ public class BoatTypes {
         ModBoatClient.registerModelLayers(BoatTypes.COBBLED_DEEPSLATE_ID, false);
         ModBoatClient.registerModelLayers(BoatTypes.CHISELED_DEEPSLATE_ID, false);
         ModBoatClient.registerModelLayers(BoatTypes.POLISHED_DEEPSLATE_ID, false);
+        ModBoatClient.registerModelLayers(BoatTypes.DEEPSLATE_BRICKS_ID, false);
+        ModBoatClient.registerModelLayers(BoatTypes.CRACKED_DEEPSLATE_BRICKS_ID, false);
     }
 
 
