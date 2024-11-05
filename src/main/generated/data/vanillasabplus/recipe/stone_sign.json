@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "sign",
   "key": {
-    "#": {
-      "item": "minecraft:stone"
-    },
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:stone",
+    "X": "minecraft:stick"
   },
   "pattern": [
     "###",

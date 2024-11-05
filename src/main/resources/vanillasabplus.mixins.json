@@ -4,15 +4,12 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BlockEntityTypeMixin",
-    "BoatEntityMixin",
-    "EntityPredicateMixin",
     "MixinAbstractBlockSettings"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "client": [
-    "BoatEntityRendererMixin",
     "HangingSignBlockEntityRendererMixin",
     "HangingSignEditScreenMixin",
     "SignBlockEntityRendererMixin",

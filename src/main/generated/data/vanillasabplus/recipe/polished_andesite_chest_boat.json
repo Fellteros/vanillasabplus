@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "chest_boat",
   "ingredients": [
-    {
-      "item": "minecraft:chest"
-    },
-    {
-      "item": "minecraft:polished_andesite"
-    }
+    "minecraft:chest",
+    "minecraft:polished_andesite"
   ],
   "result": {
     "count": 1,

@@ -2,7 +2,7 @@ package net.fellter.vanillasabplus.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.fellter.vanillasabplus.util.ModBlocks;
+import net.fellter.vanillasabplus.shared.ModBlocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 

@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "chest_boat",
   "ingredients": [
-    {
-      "item": "minecraft:chest"
-    },
-    {
-      "item": "minecraft:mossy_cobblestone"
-    }
+    "minecraft:chest",
+    "minecraft:mossy_cobblestone"
   ],
   "result": {
     "count": 1,

@@ -2,14 +2,15 @@ package net.fellter.vanillasabplus.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.fellter.vanillasabplus.util.ModItems;
+import net.fellter.vanillasabplus.shared.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.RecipeProvider;
+import net.minecraft.data.server.recipe.RecipeGenerator;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -20,119 +21,131 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(RecipeExporter exporter) {
+    protected RecipeGenerator getRecipeGenerator(RegistryWrapper.WrapperLookup registryLookup, RecipeExporter exporter) {
+        return new RecipeGenerator(registryLookup, exporter) {
+            public void offerSignRecipe(ItemConvertible output, ItemConvertible input) {
+                ShapedRecipeJsonBuilder.create(this.registries.getOrThrow(RegistryKeys.ITEM), RecipeCategory.DECORATIONS, output, 3)
+                        .group("sign")
+                        .input('#', input)
+                        .input('X', Items.STICK)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern(" X ")
+                        .criterion(hasItem(input), conditionsFromItem(input))
+                        .offerTo(exporter);
+            }
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.CRIMSON_BOAT, Blocks.CRIMSON_PLANKS);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.CRIMSON_CHEST_BOAT, Blocks.CRIMSON_PLANKS);
+            @Override
+            public void generate() {
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.WARPED_BOAT, Blocks.WARPED_PLANKS);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.WARPED_CHEST_BOAT, Blocks.WARPED_PLANKS);
+                offerBoatRecipe(ModItems.CRIMSON_BOAT, Blocks.CRIMSON_PLANKS);
+                offerChestBoatRecipe(ModItems.CRIMSON_CHEST_BOAT, Blocks.CRIMSON_PLANKS);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.STONE_BOAT, Blocks.STONE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.STONE_CHEST_BOAT, Blocks.STONE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.HANGING_STONE_SIGN, Blocks.STONE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.STONE_SIGN, Blocks.STONE);
+                offerBoatRecipe(ModItems.WARPED_BOAT, Blocks.WARPED_PLANKS);
+                offerChestBoatRecipe(ModItems.WARPED_CHEST_BOAT, Blocks.WARPED_PLANKS);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.COBBLESTONE_BOAT, Blocks.COBBLESTONE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.COBBLESTONE_CHEST_BOAT, Blocks.COBBLESTONE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.COBBLESTONE_HANGING_SIGN, Blocks.COBBLESTONE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.COBBLESTONE_SIGN, Blocks.COBBLESTONE);
+                offerBoatRecipe(ModItems.STONE_BOAT, Blocks.STONE);
+                offerChestBoatRecipe(ModItems.STONE_CHEST_BOAT, Blocks.STONE);
+                offerHangingSignRecipe(ModItems.HANGING_STONE_SIGN, Blocks.STONE);
+                offerSignRecipe(ModItems.STONE_SIGN, Blocks.STONE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.MOSSY_COBBLESTONE_BOAT, Blocks.MOSSY_COBBLESTONE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.MOSSY_COBBLESTONE_CHEST_BOAT, Blocks.MOSSY_COBBLESTONE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.MOSSY_COBBLESTONE_HANGING_SIGN, Blocks.MOSSY_COBBLESTONE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.MOSSY_COBBLESTONE_SIGN, Blocks.MOSSY_COBBLESTONE);
+                offerBoatRecipe(ModItems.COBBLESTONE_BOAT, Blocks.COBBLESTONE);
+                offerChestBoatRecipe(ModItems.COBBLESTONE_CHEST_BOAT, Blocks.COBBLESTONE);
+                offerHangingSignRecipe(ModItems.COBBLESTONE_HANGING_SIGN, Blocks.COBBLESTONE);
+                offerSignRecipe(ModItems.COBBLESTONE_SIGN, Blocks.COBBLESTONE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.SMOOTH_STONE_BOAT, Blocks.SMOOTH_STONE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.SMOOTH_STONE_CHEST_BOAT, Blocks.SMOOTH_STONE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.SMOOTH_STONE_HANGING_SIGN, Blocks.SMOOTH_STONE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.SMOOTH_STONE_SIGN, Blocks.SMOOTH_STONE);
+                offerBoatRecipe(ModItems.MOSSY_COBBLESTONE_BOAT, Blocks.MOSSY_COBBLESTONE);
+                offerChestBoatRecipe(ModItems.MOSSY_COBBLESTONE_CHEST_BOAT, Blocks.MOSSY_COBBLESTONE);
+                offerHangingSignRecipe(ModItems.MOSSY_COBBLESTONE_HANGING_SIGN, Blocks.MOSSY_COBBLESTONE);
+                offerSignRecipe(ModItems.MOSSY_COBBLESTONE_SIGN, Blocks.MOSSY_COBBLESTONE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.STONE_BRICKS_BOAT, Blocks.STONE_BRICKS);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.STONE_BRICKS_CHEST_BOAT, Blocks.STONE_BRICKS);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.STONE_BRICKS_HANGING_SIGN, Blocks.STONE_BRICKS);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.STONE_BRICKS_SIGN, Blocks.STONE_BRICKS);
+                offerBoatRecipe(ModItems.SMOOTH_STONE_BOAT, Blocks.SMOOTH_STONE);
+                offerChestBoatRecipe(ModItems.SMOOTH_STONE_CHEST_BOAT, Blocks.SMOOTH_STONE);
+                offerHangingSignRecipe(ModItems.SMOOTH_STONE_HANGING_SIGN, Blocks.SMOOTH_STONE);
+                offerSignRecipe(ModItems.SMOOTH_STONE_SIGN, Blocks.SMOOTH_STONE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_BOAT, Blocks.CRACKED_STONE_BRICKS);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT, Blocks.CRACKED_STONE_BRICKS);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_HANGING_SIGN, Blocks.CRACKED_STONE_BRICKS);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.CRACKED_STONE_BRICKS_SIGN, Blocks.CRACKED_STONE_BRICKS);
+                offerBoatRecipe(ModItems.STONE_BRICKS_BOAT, Blocks.STONE_BRICKS);
+                offerChestBoatRecipe(ModItems.STONE_BRICKS_CHEST_BOAT, Blocks.STONE_BRICKS);
+                offerHangingSignRecipe(ModItems.STONE_BRICKS_HANGING_SIGN, Blocks.STONE_BRICKS);
+                offerSignRecipe(ModItems.STONE_BRICKS_SIGN, Blocks.STONE_BRICKS);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_BOAT, Blocks.MOSSY_STONE_BRICKS);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT, Blocks.MOSSY_STONE_BRICKS);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_HANGING_SIGN, Blocks.MOSSY_STONE_BRICKS);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.MOSSY_STONE_BRICKS_SIGN, Blocks.MOSSY_STONE_BRICKS);
+                offerBoatRecipe(ModItems.CRACKED_STONE_BRICKS_BOAT, Blocks.CRACKED_STONE_BRICKS);
+                offerChestBoatRecipe(ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT, Blocks.CRACKED_STONE_BRICKS);
+                offerHangingSignRecipe(ModItems.CRACKED_STONE_BRICKS_HANGING_SIGN, Blocks.CRACKED_STONE_BRICKS);
+                offerSignRecipe(ModItems.CRACKED_STONE_BRICKS_SIGN, Blocks.CRACKED_STONE_BRICKS);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.GRANITE_BOAT, Blocks.GRANITE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.GRANITE_CHEST_BOAT, Blocks.GRANITE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.GRANITE_HANGING_SIGN, Blocks.GRANITE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.GRANITE_SIGN, Blocks.GRANITE);
+                offerBoatRecipe(ModItems.MOSSY_STONE_BRICKS_BOAT, Blocks.MOSSY_STONE_BRICKS);
+                offerChestBoatRecipe(ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT, Blocks.MOSSY_STONE_BRICKS);
+                offerHangingSignRecipe(ModItems.MOSSY_STONE_BRICKS_HANGING_SIGN, Blocks.MOSSY_STONE_BRICKS);
+                offerSignRecipe(ModItems.MOSSY_STONE_BRICKS_SIGN, Blocks.MOSSY_STONE_BRICKS);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.POLISHED_GRANITE_BOAT, Blocks.POLISHED_GRANITE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_GRANITE_CHEST_BOAT, Blocks.POLISHED_GRANITE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_GRANITE_HANGING_SIGN, Blocks.POLISHED_GRANITE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_GRANITE_SIGN, Blocks.POLISHED_GRANITE);
+                offerBoatRecipe(ModItems.GRANITE_BOAT, Blocks.GRANITE);
+                offerChestBoatRecipe(ModItems.GRANITE_CHEST_BOAT, Blocks.GRANITE);
+                offerHangingSignRecipe(ModItems.GRANITE_HANGING_SIGN, Blocks.GRANITE);
+                offerSignRecipe(ModItems.GRANITE_SIGN, Blocks.GRANITE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.DIORITE_BOAT, Blocks.DIORITE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.DIORITE_CHEST_BOAT, Blocks.DIORITE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.DIORITE_HANGING_SIGN, Blocks.DIORITE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.DIORITE_SIGN, Blocks.DIORITE);
+                offerBoatRecipe(ModItems.POLISHED_GRANITE_BOAT, Blocks.POLISHED_GRANITE);
+                offerChestBoatRecipe(ModItems.POLISHED_GRANITE_CHEST_BOAT, Blocks.POLISHED_GRANITE);
+                offerHangingSignRecipe(ModItems.POLISHED_GRANITE_HANGING_SIGN, Blocks.POLISHED_GRANITE);
+                offerSignRecipe(ModItems.POLISHED_GRANITE_SIGN, Blocks.POLISHED_GRANITE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.POLISHED_DIORITE_BOAT, Blocks.POLISHED_DIORITE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_DIORITE_CHEST_BOAT, Blocks.POLISHED_DIORITE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_DIORITE_HANGING_SIGN, Blocks.POLISHED_DIORITE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_DIORITE_SIGN, Blocks.POLISHED_DIORITE);
+                offerBoatRecipe(ModItems.DIORITE_BOAT, Blocks.DIORITE);
+                offerChestBoatRecipe(ModItems.DIORITE_CHEST_BOAT, Blocks.DIORITE);
+                offerHangingSignRecipe(ModItems.DIORITE_HANGING_SIGN, Blocks.DIORITE);
+                offerSignRecipe(ModItems.DIORITE_SIGN, Blocks.DIORITE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.ANDESITE_BOAT, Blocks.ANDESITE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.ANDESITE_CHEST_BOAT, Blocks.ANDESITE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.ANDESITE_HANGING_SIGN, Blocks.ANDESITE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.ANDESITE_SIGN, Blocks.ANDESITE);
+                offerBoatRecipe(ModItems.POLISHED_DIORITE_BOAT, Blocks.POLISHED_DIORITE);
+                offerChestBoatRecipe(ModItems.POLISHED_DIORITE_CHEST_BOAT, Blocks.POLISHED_DIORITE);
+                offerHangingSignRecipe(ModItems.POLISHED_DIORITE_HANGING_SIGN, Blocks.POLISHED_DIORITE);
+                offerSignRecipe(ModItems.POLISHED_DIORITE_SIGN, Blocks.POLISHED_DIORITE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.POLISHED_ANDESITE_BOAT, Blocks.POLISHED_ANDESITE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_ANDESITE_CHEST_BOAT, Blocks.POLISHED_ANDESITE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_ANDESITE_HANGING_SIGN, Blocks.POLISHED_ANDESITE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_ANDESITE_SIGN, Blocks.POLISHED_ANDESITE);
+                offerBoatRecipe(ModItems.ANDESITE_BOAT, Blocks.ANDESITE);
+                offerChestBoatRecipe(ModItems.ANDESITE_CHEST_BOAT, Blocks.ANDESITE);
+                offerHangingSignRecipe(ModItems.ANDESITE_HANGING_SIGN, Blocks.ANDESITE);
+                offerSignRecipe(ModItems.ANDESITE_SIGN, Blocks.ANDESITE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.DEEPSLATE_BOAT, Blocks.DEEPSLATE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.DEEPSLATE_CHEST_BOAT, Blocks.DEEPSLATE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.DEEPSLATE_HANGING_SIGN, Blocks.DEEPSLATE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.DEEPSLATE_SIGN, Blocks.DEEPSLATE);
+                offerBoatRecipe(ModItems.POLISHED_ANDESITE_BOAT, Blocks.POLISHED_ANDESITE);
+                offerChestBoatRecipe(ModItems.POLISHED_ANDESITE_CHEST_BOAT, Blocks.POLISHED_ANDESITE);
+                offerHangingSignRecipe(ModItems.POLISHED_ANDESITE_HANGING_SIGN, Blocks.POLISHED_ANDESITE);
+                offerSignRecipe(ModItems.POLISHED_ANDESITE_SIGN, Blocks.POLISHED_ANDESITE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.COBBLED_DEEPSLATE_BOAT, Blocks.COBBLED_DEEPSLATE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.COBBLED_DEEPSLATE_CHEST_BOAT, Blocks.COBBLED_DEEPSLATE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.COBBLED_DEEPSLATE_HANGING_SIGN, Blocks.COBBLED_DEEPSLATE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.COBBLED_DEEPSLATE_SIGN, Blocks.COBBLED_DEEPSLATE);
+                offerBoatRecipe(ModItems.DEEPSLATE_BOAT, Blocks.DEEPSLATE);
+                offerChestBoatRecipe(ModItems.DEEPSLATE_CHEST_BOAT, Blocks.DEEPSLATE);
+                offerHangingSignRecipe(ModItems.DEEPSLATE_HANGING_SIGN, Blocks.DEEPSLATE);
+                offerSignRecipe(ModItems.DEEPSLATE_SIGN, Blocks.DEEPSLATE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.CHISELED_DEEPSLATE_BOAT, Blocks.CHISELED_DEEPSLATE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.CHISELED_DEEPSLATE_CHEST_BOAT, Blocks.CHISELED_DEEPSLATE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.CHISELED_DEEPSLATE_HANGING_SIGN, Blocks.CHISELED_DEEPSLATE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.CHISELED_DEEPSLATE_SIGN, Blocks.CHISELED_DEEPSLATE);
+                offerBoatRecipe(ModItems.COBBLED_DEEPSLATE_BOAT, Blocks.COBBLED_DEEPSLATE);
+                offerChestBoatRecipe(ModItems.COBBLED_DEEPSLATE_CHEST_BOAT, Blocks.COBBLED_DEEPSLATE);
+                offerHangingSignRecipe(ModItems.COBBLED_DEEPSLATE_HANGING_SIGN, Blocks.COBBLED_DEEPSLATE);
+                offerSignRecipe(ModItems.COBBLED_DEEPSLATE_SIGN, Blocks.COBBLED_DEEPSLATE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.POLISHED_DEEPSLATE_BOAT, Blocks.POLISHED_DEEPSLATE);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.POLISHED_DEEPSLATE_CHEST_BOAT, Blocks.POLISHED_DEEPSLATE);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.POLISHED_DEEPSLATE_HANGING_SIGN, Blocks.POLISHED_DEEPSLATE);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.POLISHED_DEEPSLATE_SIGN, Blocks.POLISHED_DEEPSLATE);
+                offerBoatRecipe(ModItems.CHISELED_DEEPSLATE_BOAT, Blocks.CHISELED_DEEPSLATE);
+                offerChestBoatRecipe(ModItems.CHISELED_DEEPSLATE_CHEST_BOAT, Blocks.CHISELED_DEEPSLATE);
+                offerHangingSignRecipe(ModItems.CHISELED_DEEPSLATE_HANGING_SIGN, Blocks.CHISELED_DEEPSLATE);
+                offerSignRecipe(ModItems.CHISELED_DEEPSLATE_SIGN, Blocks.CHISELED_DEEPSLATE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.DEEPSLATE_BRICKS_BOAT, Blocks.DEEPSLATE_BRICKS);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.DEEPSLATE_BRICKS_CHEST_BOAT, Blocks.DEEPSLATE_BRICKS);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.DEEPSLATE_BRICKS_HANGING_SIGN, Blocks.DEEPSLATE_BRICKS);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.DEEPSLATE_BRICKS_SIGN, Blocks.DEEPSLATE_BRICKS);
+                offerBoatRecipe(ModItems.POLISHED_DEEPSLATE_BOAT, Blocks.POLISHED_DEEPSLATE);
+                offerChestBoatRecipe(ModItems.POLISHED_DEEPSLATE_CHEST_BOAT, Blocks.POLISHED_DEEPSLATE);
+                offerHangingSignRecipe(ModItems.POLISHED_DEEPSLATE_HANGING_SIGN, Blocks.POLISHED_DEEPSLATE);
+                offerSignRecipe(ModItems.POLISHED_DEEPSLATE_SIGN, Blocks.POLISHED_DEEPSLATE);
 
-        RecipeProvider.offerBoatRecipe(exporter, ModItems.CRACKED_DEEPSLATE_BRICKS_BOAT, Blocks.CRACKED_DEEPSLATE_BRICKS);
-        RecipeProvider.offerChestBoatRecipe(exporter, ModItems.CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT, Blocks.CRACKED_DEEPSLATE_BRICKS);
-        RecipeProvider.offerHangingSignRecipe(exporter, ModItems.CRACKED_DEEPSLATE_BRICKS_HANGING_SIGN, Blocks.CRACKED_DEEPSLATE_BRICKS);
-        ModRecipeProvider.offerSignRecipe(exporter, ModItems.CRACKED_DEEPSLATE_BRICKS_SIGN, Blocks.CRACKED_DEEPSLATE_BRICKS);
+                offerBoatRecipe(ModItems.DEEPSLATE_BRICKS_BOAT, Blocks.DEEPSLATE_BRICKS);
+                offerChestBoatRecipe(ModItems.DEEPSLATE_BRICKS_CHEST_BOAT, Blocks.DEEPSLATE_BRICKS);
+                offerHangingSignRecipe(ModItems.DEEPSLATE_BRICKS_HANGING_SIGN, Blocks.DEEPSLATE_BRICKS);
+                offerSignRecipe(ModItems.DEEPSLATE_BRICKS_SIGN, Blocks.DEEPSLATE_BRICKS);
+
+                offerBoatRecipe(ModItems.CRACKED_DEEPSLATE_BRICKS_BOAT, Blocks.CRACKED_DEEPSLATE_BRICKS);
+                offerChestBoatRecipe(ModItems.CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT, Blocks.CRACKED_DEEPSLATE_BRICKS);
+                offerHangingSignRecipe(ModItems.CRACKED_DEEPSLATE_BRICKS_HANGING_SIGN, Blocks.CRACKED_DEEPSLATE_BRICKS);
+                offerSignRecipe(ModItems.CRACKED_DEEPSLATE_BRICKS_SIGN, Blocks.CRACKED_DEEPSLATE_BRICKS);
+
+            }
+        };
     }
 
-    public static void offerSignRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, output, 3)
-                .group("sign")
-                .input('#', input)
-                .input('X', Items.STICK)
-                .pattern("###")
-                .pattern("###")
-                .pattern(" X ")
-                .criterion(hasItem(input), conditionsFromItem(input))
-                .offerTo(exporter);
+
+    @Override
+    public String getName() {
+        return this.toString();
     }
 }

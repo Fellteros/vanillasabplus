@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "sign",
   "key": {
-    "#": {
-      "item": "minecraft:polished_andesite"
-    },
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:polished_andesite",
+    "X": "minecraft:stick"
   },
   "pattern": [
     "###",

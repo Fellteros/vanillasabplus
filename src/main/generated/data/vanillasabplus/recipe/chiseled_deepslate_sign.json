@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "sign",
   "key": {
-    "#": {
-      "item": "minecraft:chiseled_deepslate"
-    },
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:chiseled_deepslate",
+    "X": "minecraft:stick"
   },
   "pattern": [
     "###",

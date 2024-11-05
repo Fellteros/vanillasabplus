@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "sign",
   "key": {
-    "#": {
-      "item": "minecraft:cracked_deepslate_bricks"
-    },
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:cracked_deepslate_bricks",
+    "X": "minecraft:stick"
   },
   "pattern": [
     "###",

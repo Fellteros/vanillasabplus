@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "sign",
   "key": {
-    "#": {
-      "item": "minecraft:cracked_stone_bricks"
-    },
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:cracked_stone_bricks",
+    "X": "minecraft:stick"
   },
   "pattern": [
     "###",

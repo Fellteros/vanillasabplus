@@ -2,14 +2,14 @@ package net.fellter.vanillasabplus.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.fellter.vanillasabplus.util.ModItems;
+import net.fellter.vanillasabplus.shared.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 
 import static net.fellter.vanillasabplus.model.ModBlockStateModelGenerator.registerSign;
-import static net.fellter.vanillasabplus.util.ModBlocks.*;
+import static net.fellter.vanillasabplus.shared.ModBlocks.*;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {

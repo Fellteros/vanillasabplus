@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "chest_boat",
   "ingredients": [
-    {
-      "item": "minecraft:chest"
-    },
-    {
-      "item": "minecraft:cracked_stone_bricks"
-    }
+    "minecraft:chest",
+    "minecraft:cracked_stone_bricks"
   ],
   "result": {
     "count": 1,

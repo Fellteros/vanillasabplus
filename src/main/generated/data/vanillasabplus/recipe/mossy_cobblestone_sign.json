@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "sign",
   "key": {
-    "#": {
-      "item": "minecraft:mossy_cobblestone"
-    },
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:mossy_cobblestone",
+    "X": "minecraft:stick"
   },
   "pattern": [
     "###",

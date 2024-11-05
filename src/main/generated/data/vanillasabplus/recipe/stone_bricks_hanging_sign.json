@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "hanging_sign",
   "key": {
-    "#": {
-      "item": "minecraft:stone_bricks"
-    },
-    "X": {
-      "item": "minecraft:chain"
-    }
+    "#": "minecraft:stone_bricks",
+    "X": "minecraft:chain"
   },
   "pattern": [
     "X X",

@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "chest_boat",
   "ingredients": [
-    {
-      "item": "minecraft:chest"
-    },
-    {
-      "item": "minecraft:smooth_stone"
-    }
+    "minecraft:chest",
+    "minecraft:smooth_stone"
   ],
   "result": {
     "count": 1,

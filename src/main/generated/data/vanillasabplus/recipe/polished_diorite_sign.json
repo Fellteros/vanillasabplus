@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "sign",
   "key": {
-    "#": {
-      "item": "minecraft:polished_diorite"
-    },
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:polished_diorite",
+    "X": "minecraft:stick"
   },
   "pattern": [
     "###",

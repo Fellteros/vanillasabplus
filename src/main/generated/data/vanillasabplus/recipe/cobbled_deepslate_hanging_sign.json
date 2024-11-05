@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "hanging_sign",
   "key": {
-    "#": {
-      "item": "minecraft:cobbled_deepslate"
-    },
-    "X": {
-      "item": "minecraft:chain"
-    }
+    "#": "minecraft:cobbled_deepslate",
+    "X": "minecraft:chain"
   },
   "pattern": [
     "X X",

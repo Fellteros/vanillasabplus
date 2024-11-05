@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "chest_boat",
   "ingredients": [
-    {
-      "item": "minecraft:chest"
-    },
-    {
-      "item": "minecraft:polished_diorite"
-    }
+    "minecraft:chest",
+    "minecraft:polished_diorite"
   ],
   "result": {
     "count": 1,

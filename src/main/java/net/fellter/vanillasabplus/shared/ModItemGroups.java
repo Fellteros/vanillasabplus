@@ -1,4 +1,4 @@
-package net.fellter.vanillasabplus.util;
+package net.fellter.vanillasabplus.shared;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fellter.vanillasabplus.VanillaSABPlus;
