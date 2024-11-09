@@ -23,6 +23,6 @@ public class ModHangingSignBlock extends HangingSignBlock implements ModHangingS
 
     @Override
     public Identifier getGUITexture() {
-        return Identifier.of(VanillaSABPlus.MOD_ID, "textures/gui/hanging_signs/" + texture);
+        return Identifier.of(VanillaSABPlus.MOD_ID, "gui/hanging_signs/" + texture);
     }
 }

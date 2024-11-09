@@ -3,17 +3,17 @@
   "package": "net.fellter.vanillasabplus.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "BlockEntityTypeMixin",
-    "MixinAbstractBlockSettings"
+    "MixinAbstractBlockSettings",
+    "MixinBlockEntityType"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "client": [
-    "HangingSignBlockEntityRendererMixin",
-    "HangingSignEditScreenMixin",
-    "SignBlockEntityRendererMixin",
-    "SignEditScreenMixin",
-    "MixinHandledScreen"
+    "MixinHandledScreen",
+    "MixinHangingSignBlockEntityRenderer",
+    "MixinHangingSignEditScreen",
+    "MixinSignBlockEntityRenderer",
+    "MixinSignEditScreen"
   ]
 }

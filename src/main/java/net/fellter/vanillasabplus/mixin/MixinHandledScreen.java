@@ -6,6 +6,9 @@ import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.*;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(HandledScreen.class)
 public abstract class MixinHandledScreen extends Screen {
@@ -26,31 +29,24 @@ public abstract class MixinHandledScreen extends Screen {
     protected MixinHandledScreen(Text title) {
         super(title);
     }
-
-
-
-    /**
-     * @author Fellter
-     * @reason Overflowing text in Chest boat inventory
-     */
-    @Overwrite
-    public void drawForeground(DrawContext context, int mouseX, int mouseY) {
+    
+    @Inject(method = "drawForeground", at = @At(value = "HEAD"), cancellable = true)
+    private void fellter$drawForeground(DrawContext context, int mouseX, int mouseY, CallbackInfo ci) {
         setSuffixForRender("Boat");
-        float max = 29;
+        float max = 30;
         MatrixStack matrices = context.getMatrices();
         int length = title.getString().length();
         if (length > max && title.getString().endsWith(suffix)) {
             matrices.push();
             matrices.translate(this.titleX, this.titleY, 0.0f);
-            matrices.scale(max / length, 1.0f, 1);
+            matrices.scale(max / length, max / length, 1);
             context.drawText(this.textRenderer, this.title, 0, 0, 4210752, false);
             matrices.pop();
             context.drawText(textRenderer, this.playerInventoryTitle, this.playerInventoryTitleX, this.playerInventoryTitleY, 4210752, false);
-        } else {
-            context.drawText(this.textRenderer, this.title, titleX, titleY, 4210752, false);
-            context.drawText(textRenderer, this.playerInventoryTitle, this.playerInventoryTitleX, this.playerInventoryTitleY, 4210752, false);
+            ci.cancel();
         }
     }
+
 
     @Unique
     public void setSuffixForRender(String string) {

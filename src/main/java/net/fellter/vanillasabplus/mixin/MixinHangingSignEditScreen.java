@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(HangingSignEditScreen.class)
 @Environment(EnvType.CLIENT)
-public class HangingSignEditScreenMixin {
+public class MixinHangingSignEditScreen {
     @Shadow
     @Final
     @Mutable
@@ -24,9 +24,7 @@ public class HangingSignEditScreenMixin {
 
     @Inject(method = "<init>", at = @At("TAIL"))
     private void terraformWood$initSignTextureId(SignBlockEntity signBlockEntity, boolean front, boolean filtered, CallbackInfo ci) {
-        if (signBlockEntity.getCachedState().getBlock() instanceof ModHangingSign signBlock) {
-            Identifier guiTexture = signBlock.getGUITexture();
-            this.texture = guiTexture.withSuffixedPath(".png");
-        }
+        if (signBlockEntity.getCachedState().getBlock() instanceof ModHangingSign signBlock)
+            this.texture = signBlock.getGUITexture().withSuffixedPath(".png");
     }
 }

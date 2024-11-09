@@ -21,7 +21,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(SignBlockEntityRenderer.class)
 @Environment(EnvType.CLIENT)
-public class SignBlockEntityRendererMixin {
+public class MixinSignBlockEntityRenderer {
     @Unique
     protected SignBlockEntity mod$renderedBlockEntity;
 
@@ -38,11 +38,8 @@ public class SignBlockEntityRendererMixin {
 
     @Inject(method = "getTextureId", at = @At("HEAD"), cancellable = true)
     private void modWood$rendererSignTextureId(CallbackInfoReturnable<SpriteIdentifier> cir) {
-        if (this.mod$renderedBlockEntity != null) {
-            if (this.mod$renderedBlockEntity.getCachedState().getBlock() instanceof ModSign signBlock) {
-                cir.setReturnValue(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, signBlock.getTexture()));
-            }
-        }
+        if (this.mod$renderedBlockEntity != null && this.mod$renderedBlockEntity.getCachedState().getBlock() instanceof ModSign signBlock)
+            cir.setReturnValue(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, signBlock.getTexture()));
     }
 
 }

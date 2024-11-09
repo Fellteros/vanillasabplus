@@ -15,6 +15,8 @@ public class ModSignBlock extends SignBlock implements ModSign {
         this.texture = texture;
     }
 
+
+
     @Override
     public Identifier getTexture() {
         return Identifier.of(VanillaSABPlus.MOD_ID, "entity/signs/" + texture);

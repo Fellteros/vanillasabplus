@@ -8,7 +8,6 @@ public class VanillaSABPlusClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-
         ModEntityModelLayers.registerEntityModelLayers();
     }
 }
