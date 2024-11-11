@@ -113,13 +113,13 @@ public class ModBlocks {
     public static final Block HANGING_WALL_POLISHED_DIORITE_SIGN = registerBlock("polished_diorite_wall_hanging_sign", settings -> new ModWallHangingSignBlock("polished_diorite", WoodType.OAK, settings.noCollision()),
             AbstractBlock.Settings.copy(Blocks.POLISHED_DIORITE).lootTable(HANGING_POLISHED_DIORITE_SIGN.getLootTableKey()));
 
-    public static final Block ANDESITE_SIGN = registerBlock("andesite_sign", settings -> new ModSignBlock("andesite", WoodType.OAK, settings.noCollision()),
+    public static final Block ANDESITE_SIGN = registerBlock("andesite_sign", settings -> new ModSignBlock("andesite.png", WoodType.OAK, settings.noCollision()),
             AbstractBlock.Settings.copy(Blocks.ANDESITE));
-    public static final Block WALL_ANDESITE_SIGN = registerBlock("andesite_wall_sign", settings -> new ModWallSignBlock("andesite", WoodType.OAK, settings.noCollision()),
+    public static final Block WALL_ANDESITE_SIGN = registerBlock("andesite_wall_sign", settings -> new ModWallSignBlock("andesite.png", WoodType.OAK, settings.noCollision()),
             AbstractBlock.Settings.copy(Blocks.ANDESITE).lootTable(ANDESITE_SIGN.getLootTableKey()));
-    public static final Block HANGING_ANDESITE_SIGN = registerBlock("andesite_hanging_sign", settings -> new ModHangingSignBlock("andesite", WoodType.OAK, settings.noCollision()),
+    public static final Block HANGING_ANDESITE_SIGN = registerBlock("andesite_hanging_sign", settings -> new ModHangingSignBlock("andesite.png", WoodType.OAK, settings.noCollision()),
             AbstractBlock.Settings.copy(Blocks.ANDESITE));
-    public static final Block HANGING_WALL_ANDESITE_SIGN = registerBlock("andesite_wall_hanging_sign", settings -> new ModWallHangingSignBlock("andesite", WoodType.OAK, settings.noCollision()),
+    public static final Block HANGING_WALL_ANDESITE_SIGN = registerBlock("andesite_wall_hanging_sign", settings -> new ModWallHangingSignBlock("andesite.png", WoodType.OAK, settings.noCollision()),
             AbstractBlock.Settings.copy(Blocks.ANDESITE).lootTable(HANGING_ANDESITE_SIGN.getLootTableKey()));
     
     public static final Block POLISHED_ANDESITE_SIGN = registerBlock("polished_andesite_sign", settings -> new ModSignBlock("polished_andesite", WoodType.OAK, settings.noCollision()),

@@ -69,10 +69,10 @@ public class ModEntityModelLayers {
                 ctx -> new BoatEntityRenderer(ctx, registerBoatModelLayer("polished_diorite")));
         registerEntityRenderer(ModEntityTypes.POLISHED_DIORITE_CHEST_BOAT, registerChestBoatModelLayer("polished_diorite"), BoatEntityModel::getChestTexturedModelData,
                 ctx -> new BoatEntityRenderer(ctx, registerChestBoatModelLayer("polished_diorite")));
-        registerEntityRenderer(ModEntityTypes.ANDESITE_BOAT, registerBoatModelLayer("andesite"), BoatEntityModel::getTexturedModelData,
-                ctx -> new BoatEntityRenderer(ctx, registerBoatModelLayer("andesite")));
-        registerEntityRenderer(ModEntityTypes.ANDESITE_CHEST_BOAT, registerChestBoatModelLayer("andesite"), BoatEntityModel::getChestTexturedModelData,
-                ctx -> new BoatEntityRenderer(ctx, registerChestBoatModelLayer("andesite")));
+        registerEntityRenderer(ModEntityTypes.ANDESITE_BOAT, registerBoatModelLayer("andesite.png"), BoatEntityModel::getTexturedModelData,
+                ctx -> new BoatEntityRenderer(ctx, registerBoatModelLayer("andesite.png")));
+        registerEntityRenderer(ModEntityTypes.ANDESITE_CHEST_BOAT, registerChestBoatModelLayer("andesite.png"), BoatEntityModel::getChestTexturedModelData,
+                ctx -> new BoatEntityRenderer(ctx, registerChestBoatModelLayer("andesite.png")));
         registerEntityRenderer(ModEntityTypes.POLISHED_ANDESITE_BOAT, registerBoatModelLayer("polished_andesite"), BoatEntityModel::getTexturedModelData,
                 ctx -> new BoatEntityRenderer(ctx, registerBoatModelLayer("polished_andesite")));
         registerEntityRenderer(ModEntityTypes.POLISHED_ANDESITE_CHEST_BOAT, registerChestBoatModelLayer("polished_andesite"), BoatEntityModel::getChestTexturedModelData,
@@ -109,7 +109,7 @@ public class ModEntityModelLayers {
         EntityRendererRegistry.register(entityType, entityRendererFactory);
     }
 
-    private static EntityModelLayer registerBoatModelLayer(String id) {
+    public static EntityModelLayer registerBoatModelLayer(String id) {
         return new EntityModelLayer(Identifier.of(VanillaSABPlus.MOD_ID, "boat/" + id), "main");
     }
 

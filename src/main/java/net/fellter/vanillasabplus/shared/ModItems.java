@@ -3,10 +3,8 @@ package net.fellter.vanillasabplus.shared;
 import net.fellter.vanillasabplus.VanillaSABPlus;
 import net.fellter.vanillasabplus.boat.ModEntityTypes;
 import net.minecraft.block.DispenserBlock;
-import net.minecraft.item.BoatItem;
-import net.minecraft.item.HangingSignItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SignItem;
+import net.minecraft.block.dispenser.BoatDispenserBehavior;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -134,7 +132,7 @@ public class ModItems {
 
     private static Item registerItemPrefix(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(VanillaSABPlus.MOD_ID, name), function.apply(new Item.Settings().registryKey(keyOfItem(name)).useItemPrefixedTranslationKey()));
-    } 
+    }
     
     private static Item registerBlockPrefix(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(VanillaSABPlus.MOD_ID, name), function.apply(new Item.Settings().registryKey(keyOfItem(name)).useBlockPrefixedTranslationKey()));

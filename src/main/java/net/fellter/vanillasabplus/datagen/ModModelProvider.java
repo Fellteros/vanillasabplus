@@ -8,7 +8,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 
-import static net.fellter.vanillasabplus.model.ModBlockStateModelGenerator.registerSign;
+import static net.fellter.vanillasabplus.model.ModBlockStateModelGenerator.*;
 import static net.fellter.vanillasabplus.shared.ModBlocks.*;
 
 public class ModModelProvider extends FabricModelProvider {

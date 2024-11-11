@@ -1,4 +1,4 @@
-// 1.21.3	2024-11-05T16:42:21.4108584	vanillasabplus/Block Loot Tables
+// 1.21.3	2024-11-10T11:04:24.6975608	vanillasabplus/Block Loot Tables
 2701bc5600cebe34d6bcedf4d1e9626dd44a41cc data\vanillasabplus\loot_table\blocks\cobblestone_hanging_sign.json
 b9ce2d2158bf86212294c407a7ad84ae4bae035a data\vanillasabplus\loot_table\blocks\granite_sign.json
 29967201b27c22a3fc189de7cc5cd289bb94816b data\vanillasabplus\loot_table\blocks\chiseled_deepslate_hanging_sign.json
@@ -7,8 +7,8 @@ eca8ad53d7a273be412e77962d69be7643d99d96 data\vanillasabplus\loot_table\blocks\c
 5547300466f0538dab24239c8088209c54941ae8 data\vanillasabplus\loot_table\blocks\polished_deepslate_sign.json
 9bdb2f1ba4618cb3a606a3fea780604f5e39ccf2 data\vanillasabplus\loot_table\blocks\smooth_stone_hanging_sign.json
 82005edfa8a0780eb09f40c32f5bc8744b999e29 data\vanillasabplus\loot_table\blocks\cobblestone_sign.json
-bd6776cacc33514c86a263a1cd52020efddeaafa data\vanillasabplus\loot_table\blocks\deepslate_hanging_sign.json
 f96fa70672555f7722a7aee3f55f87a8ca579735 data\vanillasabplus\loot_table\blocks\cracked_stone_bricks_sign.json
+bd6776cacc33514c86a263a1cd52020efddeaafa data\vanillasabplus\loot_table\blocks\deepslate_hanging_sign.json
 eab6104e65d9b29a68422486fd60ea000e34f18f data\vanillasabplus\loot_table\blocks\polished_granite_sign.json
 a4591aadd0bec9e8caa8cbf49fce13557eaa682c data\vanillasabplus\loot_table\blocks\smooth_stone_sign.json
 de3ceece9921df7c4661c15ead0c31ae9dbf2b72 data\vanillasabplus\loot_table\blocks\mossy_stone_bricks_sign.json
