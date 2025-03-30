@@ -2,6 +2,7 @@ package net.fellter.vanillasabplus.sign.sign_blocks;
 
 import net.fellter.vanillasabplus.VanillaSABPlus;
 import net.fellter.vanillasabplus.sign.util.ModHangingSign;
+
 import net.minecraft.block.WallHangingSignBlock;
 import net.minecraft.block.WoodType;
 import net.minecraft.util.Identifier;

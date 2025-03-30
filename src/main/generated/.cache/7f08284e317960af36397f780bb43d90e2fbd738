@@ -1,0 +1,6 @@
+// 1.21.5	-999999999-01-01T00:00:00	Vanilla+ Signs & Boats/Tags for minecraft:block
+331ee8fa4371759183dbdf27316a1555ddb63678 data/minecraft/tags/block/ceiling_hanging_signs.json
+378ec501dd53c4282609399445a6a2d5817f076f data/minecraft/tags/block/mineable/pickaxe.json
+2c47d3cb90ce6e845b8c97abf1417fba6405fa05 data/minecraft/tags/block/signs.json
+7e759003252670d0bdb705e03419bf8034f03494 data/minecraft/tags/block/wall_hanging_signs.json
+23377eb19d04b4b695efb5ecf6458920d7e9af3b data/minecraft/tags/block/wall_signs.json

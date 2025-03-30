@@ -1,7 +1,7 @@
 package net.fellter.vanillasabplus.shared;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fellter.vanillasabplus.VanillaSABPlus;
+
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -9,10 +9,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+
 public class ModItemGroups {
     public static final ItemGroup VSABP_BOAT_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(VanillaSABPlus.MOD_ID, "vsabp_boat"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.vsabp_boat"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.vsabp_boat"))
                     .icon(() -> new ItemStack(ModItems.VSABP_BOAT)).entries(((displayContext, entries) -> {
 
                         entries.add(ModItems.CRIMSON_BOAT);
@@ -82,7 +84,7 @@ public class ModItemGroups {
 
     public static final ItemGroup VSABP_SIGN_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(VanillaSABPlus.MOD_ID, "vsabp_sign"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.vsabp_sign"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.vsabp_sign"))
                     .icon(() -> new ItemStack(ModItems.VSABP_SIGN)).entries(((displayContext, entries) -> {
 
                         entries.add(ModItems.STONE_SIGN);

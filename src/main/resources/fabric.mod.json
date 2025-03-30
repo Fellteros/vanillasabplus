@@ -2,16 +2,17 @@
 	"schemaVersion": 1,
 	"id": "vanillasabplus",
 	"version": "${version}",
-	"name": "vanillasabplus",
-	"description": "Mod adding signs, hanging signs and boats to all vanilla blocks.",
+	"name": "Vanilla+ Signs & Boats",
+	"description": "Mod adding signs, hanging signs, boats and chest boats to all vanilla blocks.",
 	"authors": [
 		"Fellter"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/vanilla+-signs-and-boats",
+		"sources": "https://github.com/Fellteros/vanillasabplus",
+		"issues": "https://github.com/Fellteros/vanillasabplus/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "CC-BY-NC-4.0",
 	"icon": "assets/vanillasabplus/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -30,7 +31,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.21",
+		"minecraft": "~1.21.5",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

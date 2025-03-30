@@ -1,8 +1,9 @@
 package net.fellter.vanillasabplus;
 
+import net.fellter.vanillasabplus.datagen.*;
+
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.fellter.vanillasabplus.datagen.*;
 
 public class VanillaSABPlusDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -14,6 +15,7 @@ public class VanillaSABPlusDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModLanguageProvider::new);
 
 	}
 }

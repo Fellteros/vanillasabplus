@@ -1,28 +1,26 @@
 package net.fellter.vanillasabplus.model;
 
-import com.google.gson.JsonElement;
-import net.minecraft.block.Block;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.BlockStateSupplier;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TextureMap;
-import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
-import java.util.function.Supplier;
+
+import net.minecraft.block.Block;
+import net.minecraft.client.data.*;
+import net.minecraft.client.render.model.json.WeightedVariant;
+import net.minecraft.util.Identifier;
 
 public class ModBlockStateModelGenerator extends BlockStateModelGenerator {
-    public ModBlockStateModelGenerator(Consumer<BlockStateSupplier> blockStateCollector, BiConsumer<Identifier, Supplier<JsonElement>> modelCollector, Consumer<Item> simpleItemModelExemptionCollector) {
-        super(blockStateCollector, modelCollector, simpleItemModelExemptionCollector);
+    public ModBlockStateModelGenerator(Consumer<BlockModelDefinitionCreator> blockStateCollector, ItemModelOutput itemModelOutput, BiConsumer<Identifier, ModelSupplier> modelCollector) {
+        super(blockStateCollector, itemModelOutput, modelCollector);
     }
 
-    public static void registerSign(BlockStateModelGenerator blockStateModelGenerator, Block particleBlock, Block signBlock, Block wallSignBlock) {
-        Identifier identifier = Models.PARTICLE.upload(signBlock, TextureMap.particle(particleBlock), blockStateModelGenerator.modelCollector);
-        blockStateModelGenerator.blockStateCollector.accept(createSingletonBlockState(signBlock, identifier));
-        blockStateModelGenerator.blockStateCollector.accept(createSingletonBlockState(wallSignBlock, identifier));
-        blockStateModelGenerator.registerItemModel(signBlock.asItem());
-        blockStateModelGenerator.excludeFromSimpleItemModelGeneration(wallSignBlock);
+    private static WeightedVariant varOf(Identifier id) {
+       return createWeightedVariant(id);
+    }
+
+    public static void registerSign(BlockStateModelGenerator bsmg, Block particleBlock, Block signBlock, Block wallSignBlock) {
+        Identifier identifier = Models.PARTICLE.upload(signBlock, TextureMap.particle(particleBlock), bsmg.modelCollector);
+        bsmg.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(signBlock, varOf(identifier)));
+        bsmg.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(wallSignBlock, varOf(identifier)));
+        bsmg.registerItemModel(signBlock.asItem());
     }
 }
