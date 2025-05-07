@@ -4,7 +4,7 @@
   "group": "chest_boat",
   "ingredients": [
     "minecraft:chest",
-    "minecraft:crimson_planks"
+    "vanillasabplus:crimson_boat"
   ],
   "result": {
     "count": 1,

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanillasabplus:block/cracked_stone_bricks_sign"
+      "model": "vanillasabplus:block/cracked_stone_bricks_wall_sign"
     }
   }
 }

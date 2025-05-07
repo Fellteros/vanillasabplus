@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanillasabplus:block/polished_andesite_sign"
+      "model": "vanillasabplus:block/polished_andesite_wall_sign"
     }
   }
 }

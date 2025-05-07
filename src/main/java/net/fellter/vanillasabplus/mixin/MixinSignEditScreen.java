@@ -3,7 +3,7 @@ package net.fellter.vanillasabplus.mixin;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 
-import net.fellter.vanillasabplus.sign.util.ModSign;
+import net.fellter.vanillasabplus.sign.ModSign;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.WoodType;
@@ -23,23 +23,23 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(SignEditScreen.class)
 @Environment(EnvType.CLIENT)
 public abstract class MixinSignEditScreen extends AbstractSignEditScreen {
-    public MixinSignEditScreen(SignBlockEntity blockEntity, boolean front, boolean filtered) {
-        super(blockEntity, front, filtered);
-    }
+	public MixinSignEditScreen(SignBlockEntity blockEntity, boolean front, boolean filtered) {
+		super(blockEntity, front, filtered);
+	}
 
-    @WrapOperation(
-            // DrawContext#draw callback within the renderSignBackground method
-            method = "method_64048",
-            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/TexturedRenderLayers;getSignTextureId(Lnet/minecraft/block/WoodType;)Lnet/minecraft/client/util/SpriteIdentifier;")
-    )
-    @SuppressWarnings("unused")
-    private SpriteIdentifier terraformWood$editSignTextureId(WoodType type, Operation<SpriteIdentifier> original, DrawContext drawContext) {
-        BlockState state = this.blockEntity.getCachedState();
+	@WrapOperation(
+			// DrawContext#draw callback within the renderSignBackground method
+			method = "method_64048",
+			at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/TexturedRenderLayers;getSignTextureId(Lnet/minecraft/block/WoodType;)Lnet/minecraft/client/util/SpriteIdentifier;")
+	)
+	@SuppressWarnings("unused")
+	private SpriteIdentifier terraformWood$editSignTextureId(WoodType type, Operation<SpriteIdentifier> original, DrawContext drawContext) {
+		BlockState state = this.blockEntity.getCachedState();
 
-        if (state.getBlock() instanceof ModSign signBlock) {
-            return new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, signBlock.getTexture());
-        }
+		if (state.getBlock() instanceof ModSign signBlock) {
+			return new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, signBlock.getTexture());
+		}
 
-        return original.call(type);
-    }
+		return original.call(type);
+	}
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanillasabplus:block/mossy_cobblestone_sign"
+      "model": "vanillasabplus:block/mossy_cobblestone_wall_sign"
     }
   }
 }

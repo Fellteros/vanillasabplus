@@ -1,6 +1,6 @@
 package net.fellter.vanillasabplus.mixin;
 
-import net.fellter.vanillasabplus.sign.util.ModHangingSign;
+import net.fellter.vanillasabplus.sign.ModHangingSign;
 
 import net.minecraft.block.entity.SignBlockEntity;
 import net.minecraft.client.gui.screen.ingame.HangingSignEditScreen;
@@ -20,14 +20,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(HangingSignEditScreen.class)
 @Environment(EnvType.CLIENT)
 public class MixinHangingSignEditScreen {
-    @Shadow
-    @Final
-    @Mutable
-    private Identifier texture;
+	@Shadow
+	@Final
+	@Mutable
+	private Identifier texture;
 
-    @Inject(method = "<init>", at = @At("TAIL"))
-    private void terraformWood$initSignTextureId(SignBlockEntity signBlockEntity, boolean front, boolean filtered, CallbackInfo ci) {
-        if (signBlockEntity.getCachedState().getBlock() instanceof ModHangingSign signBlock)
-            this.texture = signBlock.getGUITexture().withSuffixedPath(".png");
-    }
+	@Inject(method = "<init>", at = @At("TAIL"))
+	private void terraformWood$initSignTextureId(SignBlockEntity signBlockEntity, boolean front, boolean filtered, CallbackInfo ci) {
+		if (signBlockEntity.getCachedState().getBlock() instanceof ModHangingSign signBlock) {
+			this.texture = signBlock.getGUITexture().withSuffixedPath(".png");
+		}
+	}
 }

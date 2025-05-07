@@ -1,6 +1,10 @@
 package net.fellter.vanillasabplus.boat;
 
 import org.jetbrains.annotations.Nullable;
+import org.joml.Quaternionf;
+import org.joml.Quaternionfc;
+
+import net.fellter.vanillasabplus.VanillaSABPlusClient;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
@@ -8,7 +12,6 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.screen.GenericContainerScreenHandler;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
@@ -33,8 +36,8 @@ public class ModHandledScreen extends HandledScreen<ScreenHandler> implements Na
 
 		if (length > max) {
 			matrices.push();
+			matrices.translate(this.titleX, this.titleY + ((getTextRenderer().fontHeight - (getTextRenderer().fontHeight * (max / length))) / 2), 0.0f);
 			matrices.scale(max / length, max / length, 1);
-			matrices.translate(this.titleX + (length / max) * 4.5, this.titleY + (length / max) * ((double) textRenderer.fontHeight / 2), 0.0f);
 			context.drawText(this.textRenderer, this.title, 0, 0, 4210752, false);
 			matrices.pop();
 			context.drawText(textRenderer, this.playerInventoryTitle, this.playerInventoryTitleX, this.playerInventoryTitleY, 4210752, false);
@@ -65,6 +68,6 @@ public class ModHandledScreen extends HandledScreen<ScreenHandler> implements Na
 
 	@Override
 	public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-		return GenericContainerScreenHandler.createGeneric9x3(syncId, playerInventory);
+		return VanillaSABPlusClient.createModGeneric9x3(syncId, playerInventory);
 	}
 }

@@ -1,6 +1,8 @@
 // 1.21.5	-999999999-01-01T00:00:00	Vanilla+ Signs & Boats/Tags for minecraft:block
-331ee8fa4371759183dbdf27316a1555ddb63678 data/minecraft/tags/block/ceiling_hanging_signs.json
-378ec501dd53c4282609399445a6a2d5817f076f data/minecraft/tags/block/mineable/pickaxe.json
-2c47d3cb90ce6e845b8c97abf1417fba6405fa05 data/minecraft/tags/block/signs.json
-7e759003252670d0bdb705e03419bf8034f03494 data/minecraft/tags/block/wall_hanging_signs.json
-23377eb19d04b4b695efb5ecf6458920d7e9af3b data/minecraft/tags/block/wall_signs.json
+53c7275b4892e2c5376efd4a1781d3ae2e343783 data/minecraft/tags/block/all_signs.json
+e6653356619be1b651132eb743ab4a0a40de1b11 data/minecraft/tags/block/ceiling_hanging_signs.json
+23035a0ad44f84e521da2cbd076b21ea83df6e03 data/minecraft/tags/block/mineable/pickaxe.json
+cbc3957fbe5a6dd77dab8167abea285d84267a65 data/minecraft/tags/block/signs.json
+7459e3d45d8bf1a47de88598e2730e463c2213f2 data/minecraft/tags/block/standing_signs.json
+9f902140006127fa340a603cc0466076ca3e778d data/minecraft/tags/block/wall_hanging_signs.json
+562ef5c5aa8ce63700942f6a42567e1d0d632f83 data/minecraft/tags/block/wall_signs.json

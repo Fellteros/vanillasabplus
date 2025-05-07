@@ -1,6 +1,6 @@
 package net.fellter.vanillasabplus.mixin;
 
-import net.fellter.vanillasabplus.sign.util.BlockSettingsLock;
+import net.fellter.vanillasabplus.sign.BlockSettingsLock;
 
 import net.minecraft.block.AbstractBlock;
 
@@ -12,20 +12,20 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractBlock.Settings.class)
 public class MixinAbstractBlockSettings implements BlockSettingsLock {
-    @Unique
-    private boolean terraform$locked = false;
+	@Unique
+	private boolean terraform$locked = false;
 
-    @Inject(method = "sounds", at = @At("HEAD"), cancellable = true)
-    private void modWood$preventSoundsOverride(CallbackInfoReturnable<AbstractBlock.Settings> cir) {
-        if (this.terraform$locked) {
-            //noinspection ConstantConditions
-            cir.setReturnValue((AbstractBlock.Settings) (Object) this);
-            this.terraform$locked = false;
-        }
-    }
+	@Inject(method = "sounds", at = @At("HEAD"), cancellable = true)
+	private void modWood$preventSoundsOverride(CallbackInfoReturnable<AbstractBlock.Settings> cir) {
+		if (this.terraform$locked) {
+			//noinspection ConstantConditions
+			cir.setReturnValue((AbstractBlock.Settings) (Object) this);
+			this.terraform$locked = false;
+		}
+	}
 
-    @Override
-    public void vanillasabplus$lock() {
-        this.terraform$locked = true;
-    }
+	@Override
+	public void vanillasabplus$lock() {
+		this.terraform$locked = true;
+	}
 }

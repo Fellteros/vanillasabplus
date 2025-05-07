@@ -15,10 +15,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.TypeFilter;
 
 public class ModEntityTypes {
-
 	public static final EntityType<BoatEntity> CRIMSON_BOAT = register("crimson_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.CRIMSON_BOAT), SpawnGroup.MISC));
 	public static final EntityType<ModChestBoatEntity> CRIMSON_CHEST_BOAT = register("crimson_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.CRIMSON_CHEST_BOAT), SpawnGroup.MISC));
 	public static final EntityType<BoatEntity> WARPED_BOAT = register("warped_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.WARPED_BOAT), SpawnGroup.MISC));
@@ -61,6 +59,22 @@ public class ModEntityTypes {
 	public static final EntityType<ModChestBoatEntity> DEEPSLATE_BRICKS_CHEST_BOAT = register("deepslate_bricks_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.DEEPSLATE_BRICKS_CHEST_BOAT), SpawnGroup.MISC));
 	public static final EntityType<BoatEntity> CRACKED_DEEPSLATE_BRICKS_BOAT = register("cracked_deepslate_bricks_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.CRACKED_DEEPSLATE_BRICKS_BOAT), SpawnGroup.MISC));
 	public static final EntityType<ModChestBoatEntity> CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT = register("cracked_deepslate_bricks_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT), SpawnGroup.MISC));
+	public static final EntityType<BoatEntity> DEEPSLATE_TILES_BOAT = register("deepslate_tiles_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.DEEPSLATE_TILES_BOAT), SpawnGroup.MISC));
+	public static final EntityType<ModChestBoatEntity> DEEPSLATE_TILES_CHEST_BOAT = register("deepslate_tiles_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.DEEPSLATE_TILES_CHEST_BOAT), SpawnGroup.MISC));
+	public static final EntityType<BoatEntity> CRACKED_DEEPSLATE_TILES_BOAT = register("cracked_deepslate_tiles_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.CRACKED_DEEPSLATE_TILES_BOAT), SpawnGroup.MISC));
+	public static final EntityType<ModChestBoatEntity> CRACKED_DEEPSLATE_TILES_CHEST_BOAT = register("cracked_deepslate_tiles_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.CRACKED_DEEPSLATE_TILES_CHEST_BOAT), SpawnGroup.MISC));
+	public static final EntityType<BoatEntity> TUFF_BOAT = register("tuff_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.TUFF_BOAT), SpawnGroup.MISC));
+	public static final EntityType<ModChestBoatEntity> TUFF_CHEST_BOAT = register("tuff_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.TUFF_CHEST_BOAT), SpawnGroup.MISC));
+	public static final EntityType<BoatEntity> CHISELED_TUFF_BOAT = register("chiseled_tuff_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.CHISELED_TUFF_BOAT), SpawnGroup.MISC));
+	public static final EntityType<ModChestBoatEntity> CHISELED_TUFF_CHEST_BOAT = register("chiseled_tuff_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.CHISELED_TUFF_CHEST_BOAT), SpawnGroup.MISC));
+	public static final EntityType<BoatEntity> POLISHED_TUFF_BOAT = register("polished_tuff_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.POLISHED_TUFF_BOAT), SpawnGroup.MISC));
+	public static final EntityType<ModChestBoatEntity> POLISHED_TUFF_CHEST_BOAT = register("polished_tuff_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.POLISHED_TUFF_CHEST_BOAT), SpawnGroup.MISC));
+	public static final EntityType<BoatEntity> TUFF_BRICKS_BOAT = register("tuff_bricks_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.TUFF_BRICKS_BOAT), SpawnGroup.MISC));
+	public static final EntityType<ModChestBoatEntity> TUFF_BRICKS_CHEST_BOAT = register("tuff_bricks_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.TUFF_BRICKS_CHEST_BOAT), SpawnGroup.MISC));
+	public static final EntityType<BoatEntity> CHISELED_TUFF_BRICKS_BOAT = register("chiseled_tuff_bricks_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.CHISELED_TUFF_BRICKS_BOAT), SpawnGroup.MISC));
+	public static final EntityType<ModChestBoatEntity> CHISELED_TUFF_BRICKS_CHEST_BOAT = register("chiseled_tuff_bricks_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.CHISELED_TUFF_BRICKS_CHEST_BOAT), SpawnGroup.MISC));
+	public static final EntityType<BoatEntity> BRICKS_BOAT = register("bricks_boat", EntityType.Builder.create(getBoatFactory(() -> ModItems.BRICKS_BOAT), SpawnGroup.MISC));
+	public static final EntityType<ModChestBoatEntity> BRICKS_CHEST_BOAT = register("bricks_chest_boat", EntityType.Builder.create(getChestBoatFactory(() -> ModItems.BRICKS_CHEST_BOAT), SpawnGroup.MISC));
 
 	private static EntityType.EntityFactory<BoatEntity> getBoatFactory(Supplier<Item> itemSupplier) {
 		return (type, world) -> new BoatEntity(type, world, itemSupplier);
@@ -75,7 +89,10 @@ public class ModEntityTypes {
 	}
 
 	private static <T extends Entity> EntityType<T> register(String id, EntityType.Builder<T> builder) {
-		return Registry.register(Registries.ENTITY_TYPE, keyOf(id), builder.dropsNothing().dimensions(1.375f, 0.5625f).eyeHeight(0.5625f).maxTrackingRange(10).build(keyOf(id)));
+		EntityType<T> entityType = Registry.register(Registries.ENTITY_TYPE, keyOf(id), builder.dropsNothing().dimensions(1.375f, 0.5625f).eyeHeight(0.5625f).maxTrackingRange(10).build(keyOf(id)));
+		var entity = entityType.factory.create(entityType, null);
+		VanillaSABPlus.MOD_BOAT_SOURCE_MAP.put(entityType, entity);
+		return entityType;
 	}
 
 	public static void registerEntityTypes() {

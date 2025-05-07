@@ -1,6 +1,6 @@
 package net.fellter.vanillasabplus.mixin;
 
-import net.fellter.vanillasabplus.sign.util.ModSign;
+import net.fellter.vanillasabplus.sign.ModSign;
 
 import net.minecraft.block.WoodType;
 import net.minecraft.client.render.TexturedRenderLayers;

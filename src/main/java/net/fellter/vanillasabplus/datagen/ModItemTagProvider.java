@@ -2,8 +2,13 @@ package net.fellter.vanillasabplus.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
-import net.fellter.vanillasabplus.shared.ModItems;
+import net.fellter.vanillasabplus.VanillaSABPlus;
 
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.vehicle.BoatEntity;
+import net.minecraft.entity.vehicle.ChestBoatEntity;
+import net.minecraft.item.BoatItem;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -11,60 +16,18 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 
 public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
-    public ModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
-        super(output, completableFuture);
-    }
+	public ModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
+		super(output, completableFuture);
+	}
 
-    @Override
-    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-
-        getOrCreateTagBuilder(ItemTags.BOATS)
-                .add(ModItems.CRIMSON_BOAT)
-                .add(ModItems.WARPED_BOAT)
-                .add(ModItems.STONE_BOAT)
-                .add(ModItems.COBBLESTONE_BOAT)
-                .add(ModItems.MOSSY_COBBLESTONE_BOAT)
-                .add(ModItems.SMOOTH_STONE_BOAT)
-                .add(ModItems.STONE_BRICKS_BOAT)
-                .add(ModItems.CRACKED_STONE_BRICKS_BOAT)
-                .add(ModItems.MOSSY_STONE_BRICKS_BOAT)
-                .add(ModItems.GRANITE_BOAT)
-                .add(ModItems.POLISHED_GRANITE_BOAT)
-                .add(ModItems.DIORITE_BOAT)
-                .add(ModItems.POLISHED_DIORITE_BOAT)
-                .add(ModItems.ANDESITE_BOAT)
-                .add(ModItems.POLISHED_ANDESITE_BOAT)
-                .add(ModItems.DEEPSLATE_BOAT)
-                .add(ModItems.COBBLED_DEEPSLATE_BOAT)
-                .add(ModItems.CHISELED_DEEPSLATE_BOAT)
-                .add(ModItems.POLISHED_DEEPSLATE_BOAT)
-                .add(ModItems.DEEPSLATE_BRICKS_BOAT)
-                .add(ModItems.CRACKED_DEEPSLATE_BRICKS_BOAT)
-        ;
-
-
-        getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
-                .add(ModItems.CRIMSON_CHEST_BOAT)
-                .add(ModItems.WARPED_CHEST_BOAT)
-                .add(ModItems.STONE_CHEST_BOAT)
-                .add(ModItems.COBBLESTONE_CHEST_BOAT)
-                .add(ModItems.MOSSY_COBBLESTONE_CHEST_BOAT)
-                .add(ModItems.SMOOTH_STONE_CHEST_BOAT)
-                .add(ModItems.STONE_BRICKS_CHEST_BOAT)
-                .add(ModItems.CRACKED_STONE_BRICKS_CHEST_BOAT)
-                .add(ModItems.MOSSY_STONE_BRICKS_CHEST_BOAT)
-                .add(ModItems.GRANITE_CHEST_BOAT)
-                .add(ModItems.POLISHED_GRANITE_CHEST_BOAT)
-                .add(ModItems.DIORITE_CHEST_BOAT)
-                .add(ModItems.POLISHED_DIORITE_CHEST_BOAT)
-                .add(ModItems.ANDESITE_CHEST_BOAT)
-                .add(ModItems.POLISHED_ANDESITE_CHEST_BOAT)
-                .add(ModItems.DEEPSLATE_CHEST_BOAT)
-                .add(ModItems.COBBLED_DEEPSLATE_CHEST_BOAT)
-                .add(ModItems.CHISELED_DEEPSLATE_CHEST_BOAT)
-                .add(ModItems.POLISHED_DEEPSLATE_CHEST_BOAT)
-                .add(ModItems.DEEPSLATE_BRICKS_CHEST_BOAT)
-                .add(ModItems.CRACKED_DEEPSLATE_BRICKS_CHEST_BOAT)
-        ;
-    }
+	@Override
+	protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+		Registries.ITEM.forEach(item -> {
+			if (Registries.ITEM.getId(item).getNamespace().equals(VanillaSABPlus.MOD_ID) && item instanceof BoatItem) {
+				Entity entity = VanillaSABPlus.MOD_BOAT_SOURCE_MAP.get(((BoatItem) item).boatEntityType);
+				if (entity instanceof ChestBoatEntity) getOrCreateTagBuilder(ItemTags.CHEST_BOATS).add(item);
+				if (entity instanceof BoatEntity) getOrCreateTagBuilder(ItemTags.BOATS).add(item);
+			}
+		});
+	}
 }

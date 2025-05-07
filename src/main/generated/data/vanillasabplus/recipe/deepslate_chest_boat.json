@@ -4,7 +4,7 @@
   "group": "chest_boat",
   "ingredients": [
     "minecraft:chest",
-    "minecraft:deepslate"
+    "vanillasabplus:deepslate_boat"
   ],
   "result": {
     "count": 1,

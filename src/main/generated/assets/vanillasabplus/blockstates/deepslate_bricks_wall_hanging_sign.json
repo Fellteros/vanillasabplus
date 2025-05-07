@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanillasabplus:block/deepslate_bricks_hanging_sign"
+      "model": "vanillasabplus:block/deepslate_bricks_wall_hanging_sign"
     }
   }
 }

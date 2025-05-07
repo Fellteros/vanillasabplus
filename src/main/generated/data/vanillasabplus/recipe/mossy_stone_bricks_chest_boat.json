@@ -4,7 +4,7 @@
   "group": "chest_boat",
   "ingredients": [
     "minecraft:chest",
-    "minecraft:mossy_stone_bricks"
+    "vanillasabplus:mossy_stone_bricks_boat"
   ],
   "result": {
     "count": 1,

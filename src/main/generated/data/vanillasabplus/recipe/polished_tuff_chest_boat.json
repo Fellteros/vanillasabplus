@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chest_boat",
+  "ingredients": [
+    "minecraft:chest",
+    "vanillasabplus:polished_tuff_boat"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanillasabplus:polished_tuff_chest_boat"
+  }
+}

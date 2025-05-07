@@ -8,19 +8,26 @@ import net.minecraft.client.data.*;
 import net.minecraft.client.render.model.json.WeightedVariant;
 import net.minecraft.util.Identifier;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+
+@Environment(EnvType.CLIENT)
 public class ModBlockStateModelGenerator extends BlockStateModelGenerator {
-    public ModBlockStateModelGenerator(Consumer<BlockModelDefinitionCreator> blockStateCollector, ItemModelOutput itemModelOutput, BiConsumer<Identifier, ModelSupplier> modelCollector) {
-        super(blockStateCollector, itemModelOutput, modelCollector);
-    }
+	public ModBlockStateModelGenerator(Consumer<BlockModelDefinitionCreator> blockStateCollector, ItemModelOutput itemModelOutput, BiConsumer<Identifier, ModelSupplier> modelCollector) {
+		super(blockStateCollector, itemModelOutput, modelCollector);
+	}
 
-    private static WeightedVariant varOf(Identifier id) {
-       return createWeightedVariant(id);
-    }
+	private static WeightedVariant varOf(Identifier id) {
+		return createWeightedVariant(id);
+	}
 
-    public static void registerSign(BlockStateModelGenerator bsmg, Block particleBlock, Block signBlock, Block wallSignBlock) {
-        Identifier identifier = Models.PARTICLE.upload(signBlock, TextureMap.particle(particleBlock), bsmg.modelCollector);
-        bsmg.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(signBlock, varOf(identifier)));
-        bsmg.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(wallSignBlock, varOf(identifier)));
-        bsmg.registerItemModel(signBlock.asItem());
-    }
+	public static void registerSignWithItem(BlockStateModelGenerator bsmg, Block particleBlock, Block signBlock) {
+		registerSign(bsmg, particleBlock, signBlock);
+		bsmg.registerItemModel(signBlock.asItem());
+	}
+
+	public static void registerSign(BlockStateModelGenerator bsmg, Block particleBlock, Block signBlock) {
+		Identifier identifier = Models.PARTICLE.upload(signBlock, TextureMap.particle(particleBlock), bsmg.modelCollector);
+		bsmg.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(signBlock, varOf(identifier)));
+	}
 }

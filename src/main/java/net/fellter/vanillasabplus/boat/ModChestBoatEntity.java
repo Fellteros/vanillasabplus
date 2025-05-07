@@ -28,6 +28,7 @@ public class ModChestBoatEntity extends ChestBoatEntity {
 	@Override
 	public void openInventory(PlayerEntity playerEntity) {
 		playerEntity.openHandledScreen(new SimpleNamedScreenHandlerFactory((syncId, playerInventory, player) -> VanillaSABPlusClient.createModGeneric9x3(syncId, playerInventory, this), this.getDisplayName()));
+
 		if (playerEntity.getWorld() instanceof ServerWorld serverWorld) {
 			this.emitGameEvent(GameEvent.CONTAINER_OPEN, playerEntity);
 			PiglinBrain.onGuardedBlockInteracted(serverWorld, playerEntity, true);
@@ -53,6 +54,4 @@ public class ModChestBoatEntity extends ChestBoatEntity {
 			return VanillaSABPlusClient.createModGeneric9x3(i, playerInventory, this);
 		}
 	}
-
-
 }

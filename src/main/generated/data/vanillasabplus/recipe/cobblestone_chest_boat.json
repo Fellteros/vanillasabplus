@@ -4,7 +4,7 @@
   "group": "chest_boat",
   "ingredients": [
     "minecraft:chest",
-    "minecraft:cobblestone"
+    "vanillasabplus:cobblestone_boat"
   ],
   "result": {
     "count": 1,

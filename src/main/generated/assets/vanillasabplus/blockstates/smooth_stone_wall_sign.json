@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanillasabplus:block/smooth_stone_sign"
+      "model": "vanillasabplus:block/smooth_stone_wall_sign"
     }
   }
 }
